@@ -13,5 +13,6 @@ namespace Z_MoreAlerts
         public static ThoughtDef SharedBed;
         public static ThoughtDef AteKibble;
         public static ThoughtDef Ascetic;
+        public static ThoughtDef NotBondedAnimalMaster;
     }
 }
