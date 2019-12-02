@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+  <name>Extra Alerts</name>
+  <author>Zylle</author>
+  <supportedVersions><li>1.0</li></supportedVersions>
+  <description>
+Adds some useful alerts. Includes:
+
+- Caravan paused and awaiting instructions
+
+- Tainted clothing
+
+- Human leather worn by pawn who doesn't like it
+
+- Lovers not sharing a bed
+
+- Non-lovers sharing a bed
+
+- Aescetic has nice bedroom
+
+- Bonded animal not assigned to bonded master
+
+Safe to add and remove
+
+</description>
+</ModMetaData>
