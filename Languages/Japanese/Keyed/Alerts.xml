@@ -1,25 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <NotBondedAnimalMaster>動物(絆)の主人が違う</NotBondedAnimalMaster>
-  <NotBondedAnimalMasterDesc>絆で結ばれた主人に動物が割り当てられていません。</NotBondedAnimalMasterDesc>
+  <NotBondedAnimalMasterDesc>絆で結ばれた主人に動物が割り当てられていません</NotBondedAnimalMasterDesc>
 
-  <AlertDeadMansApparel>汚れた衣服を着ている</AlertDeadMansApparel>
+  <AlertDeadMansApparel>汚れた衣服を着用</AlertDeadMansApparel>
   <AlertDeadMansApparelDesc>これらの入植者たちは死人が着ていた服を着ているので、心情が悪化しています：\n\n{0}\n清潔な服を着せてください。</AlertDeadMansApparelDesc>
 
-  <AlertWantToSleepWith>恋人たちが離別々のベッド</AlertWantToSleepWith>
+  <AlertWantToSleepWith>恋人が別々なベッド</AlertWantToSleepWith>
   <AlertWantToSleepWithDesc>これらの入植者たちは恋人と一緒に寝たいと思っています。ダブルベッドを割り当てることを検討してください。</AlertWantToSleepWithDesc>
 
-  <AlertSharingBedUnhappy>他人とベッドを共有している</AlertSharingBedUnhappy>
+  <AlertSharingBedUnhappy>他人とベッドを共有</AlertSharingBedUnhappy>
   <AlertSharingBedUnhappyDesc>これらの入植者たちは恋人でも無いのにベッドを共有しています。彼らを別々のベッドに割り当てることを検討してください。</AlertSharingBedUnhappyDesc>
 
   <AlertPausedCaravan>キャラバンが待機中</AlertPausedCaravan>
   <AlertPausedCaravanDesc>キャラバン隊の1つがワールドマップ上で一時停止しており、あなたの指示を待っている可能性があります。</AlertPausedCaravanDesc>
 
-  <AsceticBedroomQuality>禁欲な入植者に良い部屋</AsceticBedroomQuality>
+  <AsceticBedroomQuality>禁欲者に良い部屋</AsceticBedroomQuality>
   <AsceticBedroomQualityDesc>禁欲の特徴を持つ入植者は自分の寝室があまりにも豪華な事に不満を抱いています。美しさを取り除くか、より評価が悪い寝室へ割り当てることを検討してください。</AsceticBedroomQualityDesc>
 
-  <AlertHumanLeatherApparelSad>人の皮製品による不幸</AlertHumanLeatherApparelSad>
+  <AlertHumanLeatherApparelSad>人の皮製品で不幸</AlertHumanLeatherApparelSad>
   <AlertHumanLeatherApparelSadDesc>これらの入植者たちは人間の皮で出来た衣服を身に着けているので、不幸を感じています。他の素材で作られた衣服を着せてください。</AlertHumanLeatherApparelSadDesc>
 
 </LanguageData>
