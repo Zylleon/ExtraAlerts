@@ -20,7 +20,8 @@ namespace Z_MoreAlerts
         public Alert_NotBondedAnimalMaster()
         {
             this.defaultLabel = "NotBondedAnimalMaster".Translate();
-            this.defaultExplanation = "NotBondedAnimalMasterDesc".Translate();
+
+            this.explanationKey = "NotBondedAnimalMasterDesc";
         }
     }
 }
