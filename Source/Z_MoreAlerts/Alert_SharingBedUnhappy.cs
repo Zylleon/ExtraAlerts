@@ -22,6 +22,14 @@ namespace Z_MoreAlerts
             this.defaultLabel = "AlertSharingBedUnhappy".Translate();
             this.explanationKey = "AlertSharingBedUnhappyDesc";
         }
+
+        public override bool Active
+        {
+            get
+            {
+                return ExtraAlertSettings.cb_sharedBed && this.GetReport().active;
+            }
+        }
     }
 }
 

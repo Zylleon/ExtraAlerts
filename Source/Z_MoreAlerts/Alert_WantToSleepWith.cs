@@ -22,6 +22,14 @@ namespace Z_MoreAlerts
             this.defaultLabel = "AlertWantToSleepWith".Translate();
             this.explanationKey = "AlertWantToSleepWithDesc";
         }
+
+        public override bool Active
+        {
+            get
+            {
+                return ExtraAlertSettings.cb_Lovers && this.GetReport().active;
+            }
+        }
     }
 }
 

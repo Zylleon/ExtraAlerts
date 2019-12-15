@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-  <NotBondedAnimalMaster>Bonded animal</NotBondedAnimalMaster>
-  <NotBondedAnimalMasterDesc>An animal is not assigned to its bonded master.</NotBondedAnimalMasterDesc>
+  <ExtraAlerts_ModName>Extra Alerts</ExtraAlerts_ModName>
+
+  <AlertNotBondedAnimalMaster>Bonded animal</AlertNotBondedAnimalMaster>
+  <AlertNotBondedAnimalMasterDesc>An animal is not assigned to its bonded master.</AlertNotBondedAnimalMasterDesc>
 
   <AlertDeadMansApparel>Tainted apparel</AlertDeadMansApparel>
   <AlertDeadMansApparelDesc>These colonists are wearing apparel from a corpse, which is making them sad:\n\n{0}\nGet them some clean clothing.</AlertDeadMansApparelDesc>
@@ -16,8 +18,8 @@
   <AlertPausedCaravan>Caravan waiting</AlertPausedCaravan>
   <AlertPausedCaravanDesc>One of your caravans is paused and may be waiting for instructions.</AlertPausedCaravanDesc>
   
-  <AsceticBedroomQuality>Ascetic has nice room</AsceticBedroomQuality>
-  <AsceticBedroomQualityDesc>An ascetic colonist is unhappy that their bedroom is too nice. Consider removing ameneties or assigning them to a worse bedroom.</AsceticBedroomQualityDesc>
+  <AlertAsceticBedroomQuality>Ascetic has nice room</AlertAsceticBedroomQuality>
+  <AlertAsceticBedroomQualityDesc>An ascetic colonist is unhappy that their bedroom is too nice. Consider removing ameneties or assigning them to a worse bedroom.</AlertAsceticBedroomQualityDesc>
   
   <AlertHumanLeatherApparelSad>Unhappy human leather</AlertHumanLeatherApparelSad>
   <AlertHumanLeatherApparelSadDesc>These colonists are wearing human leather apparel, which they find disturbing. Get them clothing made of something else.</AlertHumanLeatherApparelSadDesc>

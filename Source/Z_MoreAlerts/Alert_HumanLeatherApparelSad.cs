@@ -22,5 +22,13 @@ namespace Z_MoreAlerts
             this.defaultLabel = "AlertHumanLeatherApparelSad".Translate();
             this.explanationKey = "AlertHumanLeatherApparelSadDesc";
         }
+
+        public override bool Active
+        {
+            get
+            {
+                return this.GetReport().active && ExtraAlertSettings.cb_humanApparel;
+            }
+        }
     }
 }

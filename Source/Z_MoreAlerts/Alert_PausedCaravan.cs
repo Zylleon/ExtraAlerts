@@ -33,6 +33,11 @@ namespace Z_MoreAlerts
 
         public override AlertReport GetReport()
         {
+            if (!ExtraAlertSettings.cb_caravanWaiting)
+            {
+                return AlertReport.Inactive;
+            }
+
             return AlertReport.CulpritsAre(this.ImmobileCaravans);
         }
     }

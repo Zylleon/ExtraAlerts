@@ -19,9 +19,17 @@ namespace Z_MoreAlerts
 
         public Alert_NotBondedAnimalMaster()
         {
-            this.defaultLabel = "NotBondedAnimalMaster".Translate();
+            this.defaultLabel = "AlertNotBondedAnimalMaster".Translate();
 
-            this.explanationKey = "NotBondedAnimalMasterDesc";
+            this.explanationKey = "AlertNotBondedAnimalMasterDesc";
+        }
+
+        public override bool Active
+        {
+            get
+            {
+                return this.GetReport().active && ExtraAlertSettings.cb_bondedAnimal;
+            }
         }
     }
 }

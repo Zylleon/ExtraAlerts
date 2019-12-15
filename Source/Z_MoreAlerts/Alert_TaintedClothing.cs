@@ -22,5 +22,27 @@ namespace Z_MoreAlerts
             this.defaultLabel = "AlertDeadMansApparel".Translate();
             this.explanationKey = "AlertDeadMansApparelDesc";
         }
+
+        //public override AlertReport GetReport()
+        //{
+        //    if (!ExtraAlertSettings.cb_caravanWaiting)
+        //    {
+        //        return AlertReport.Inactive;
+        //    }
+
+
+        //    return this.base.GetReport();
+
+        //    //return AlertReport.CulpritsAre(this.base.AffectedPawns());
+        //}
+
+
+        public override bool Active
+        {
+            get
+            {
+                return ExtraAlertSettings.cb_deadApparel && this.GetReport().active; 
+            }
+        }
     }
 }

@@ -54,6 +54,7 @@
     <Compile Include="Alert_SharingBedUnhappy.cs" />
     <Compile Include="Alert_TaintedClothing.cs" />
     <Compile Include="Alert_WantToSleepWith.cs" />
+    <Compile Include="ExtraAlertSettings.cs" />
     <Compile Include="MoreAlertsDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

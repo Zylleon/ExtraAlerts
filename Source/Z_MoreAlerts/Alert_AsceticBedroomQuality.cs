@@ -11,13 +11,17 @@ namespace Z_MoreAlerts
     {
         public Alert_AsceticBedroomQuality()
         {
-            this.defaultLabel = "AsceticBedroomQuality".Translate();
-            this.defaultExplanation = "AsceticBedroomQualityDesc".Translate();
+            this.defaultLabel = "AlertAsceticBedroomQuality".Translate();
+            this.defaultExplanation = "AlertAsceticBedroomQualityDesc".Translate();
             this.defaultPriority = AlertPriority.Medium;
         }
 
         public override AlertReport GetReport()
         {
+            if (!ExtraAlertSettings.cb_asceticBedroom)
+            {
+                return AlertReport.Inactive;
+            }
             return AlertReport.CulpritsAre(this.AffectedPawns());
         }
 
