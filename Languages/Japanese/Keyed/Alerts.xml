@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <ExtraAlerts_ModName>Extra Alerts</ExtraAlerts_ModName>
+
   <AlertNotBondedAnimalMaster>動物(絆)の主人が違う</AlertNotBondedAnimalMaster>
   <AlertNotBondedAnimalMasterDesc>絆で結ばれた主人に動物が割り当てられていません</AlertNotBondedAnimalMasterDesc>
 
