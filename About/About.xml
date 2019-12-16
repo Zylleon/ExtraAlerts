@@ -5,22 +5,20 @@
   <supportedVersions><li>1.0</li></supportedVersions>
   <description>
 Adds some useful alerts, with options to disable ones you don't want. Includes:
-
-- Caravan paused and awaiting instructions
-
-- Tainted clothing
-
-- Human leather worn by pawn who doesn't like it
-
-- Lovers not sharing a bed
-
-- Non-lovers sharing a bed
-
-- Aescetic has nice bedroom
-
-- Bonded animal not assigned to bonded master
-
+[list]
+[*]Caravan paused and awaiting instructions
+[*]Tainted clothing
+[*]Human leather worn by pawn who doesn't like it
+[*]Lovers not sharing a bed
+[*]Non-lovers sharing a bed
+[*]Ascetic has nice bedroom
+[*]Bonded animal not assigned to bonded master
+[/list]
 Safe to add and remove
+
+Japanese translation by Proxyer
+
+[url=https://github.com/Zylleon/ExtraAlerts/releases/latest]Github link[/url]
 
 </description>
 </ModMetaData>
