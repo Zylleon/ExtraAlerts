@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alert_AsceticBedroomQuality.cs" />
+    <Compile Include="Alert_AllyNeedsRescue.cs" />
+    <Compile Include="Alert_EnemyNeedsRescue.cs" />
     <Compile Include="Alert_HumanLeatherApparelSad.cs" />
     <Compile Include="Alert_NotBondedAnimalMaster.cs" />
     <Compile Include="Alert_PausedCaravan.cs" />

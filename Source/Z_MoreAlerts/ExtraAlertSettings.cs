@@ -18,6 +18,8 @@ namespace Z_MoreAlerts
         public static bool cb_caravanWaiting = true;
         public static bool cb_asceticBedroom = true;
         public static bool cb_humanApparel = true;
+        public static bool cb_enemyRescue = true;
+        public static bool cb_allyRescue = true;
 
 
 
@@ -33,6 +35,8 @@ namespace Z_MoreAlerts
             Scribe_Values.Look(ref cb_caravanWaiting, "cb_caravanWaiting", true);
             Scribe_Values.Look(ref cb_asceticBedroom, "cb_asceticBedroom", true);
             Scribe_Values.Look(ref cb_humanApparel, "cb_humanApparel", true);
+            Scribe_Values.Look(ref cb_enemyRescue, "cb_enemyRescue", true);
+            Scribe_Values.Look(ref cb_allyRescue, "cb_allyRescue", true);
 
         }
     }
@@ -61,6 +65,9 @@ namespace Z_MoreAlerts
             listingStandard.CheckboxLabeled("AlertPausedCaravan".Translate(), ref ExtraAlertSettings.cb_caravanWaiting, "AlertPausedCaravanDesc".Translate());
             listingStandard.CheckboxLabeled("AlertAsceticBedroomQuality".Translate(), ref ExtraAlertSettings.cb_asceticBedroom, "AlertAsceticBedroomQualityDesc".Translate());
             listingStandard.CheckboxLabeled("AlertHumanLeatherApparelSad".Translate(), ref ExtraAlertSettings.cb_humanApparel, "AlertHumanLeatherApparelSadDesc".Translate());
+            listingStandard.CheckboxLabeled("AlertEnemyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_enemyRescue, "AlertEnemyNeedsRescueDesc".Translate());
+            listingStandard.CheckboxLabeled("AlertAllyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_allyRescue, "AlertAllyNeedsRescueDesc".Translate());
+
 
             listingStandard.End();
 
