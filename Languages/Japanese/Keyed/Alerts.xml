@@ -24,4 +24,10 @@
   <AlertHumanLeatherApparelSad>人の皮製品で不幸</AlertHumanLeatherApparelSad>
   <AlertHumanLeatherApparelSadDesc>これらの入植者たちは人間の皮で出来た衣服を身に着けているので、不幸を感じています。他の素材で作られた衣服を着せてください。</AlertHumanLeatherApparelSadDesc>
 
+  <AlertEnemyNeedsRescue>救助が必要な敵</AlertEnemyNeedsRescue>
+  <AlertEnemyNeedsRescueDesc>無能力化された敵です。囚人にしたり、衣服を脱がせたり、トドメを刺したりできます。</AlertEnemyNeedsRescueDesc>
+
+  <AlertAllyNeedsRescue>救助が必要な同盟者</AlertAllyNeedsRescue>
+  <AlertAllyNeedsRescueDesc>無能力化された味方です。彼らを救助したほうがいいかもしれません。</AlertAllyNeedsRescueDesc>
+
 </LanguageData>
