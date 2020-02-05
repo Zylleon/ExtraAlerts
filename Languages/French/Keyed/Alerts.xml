@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <ExtraAlerts_ModName>Extra Alerts</ExtraAlerts_ModName>
+
+  <AlertNotBondedAnimalMaster>Animal lié</AlertNotBondedAnimalMaster>
+  <AlertNotBondedAnimalMasterDesc>Un animal lié n'est pas assigné à son maître.</AlertNotBondedAnimalMasterDesc>
+
+  <AlertDeadMansApparel>Vêtements souillés</AlertDeadMansApparel>
+  <AlertDeadMansApparelDesc>Les colons suivants portent des vêtements ayant été portés par un cadavre, ce qui les rends tristes :\n\n{0}\n Donnez-leur des habits propres.</AlertDeadMansApparelDesc>
+  
+  <AlertWantToSleepWith>Amants séparés</AlertWantToSleepWith>
+  <AlertWantToSleepWithDesc>Ces colons veulent dormir ensemble. Envisagez de les assigner à un double-lit.</AlertWantToSleepWithDesc>
+  
+  <AlertSharingBedUnhappy>Malheureux partage de lit</AlertSharingBedUnhappy>
+  <AlertSharingBedUnhappyDesc>Ces colons partagent un lit mais ne sont pas amants. Essayez de les assigner à des lits séparés.</AlertSharingBedUnhappyDesc>
+  
+  <AlertPausedCaravan>Caravane en attente</AlertPausedCaravan>
+  <AlertPausedCaravanDesc>Une de vos caravanes est en pause et attend vos instructions.</AlertPausedCaravanDesc>
+  
+  <AlertAsceticBedroomQuality>Ascète dans une belle chambre</AlertAsceticBedroomQuality>
+  <AlertAsceticBedroomQualityDesc>Un de vos colons ascète est dans une chambre qu'il considère trop belle. Essayez de lui enlever des meubles ou de l'assigner à une chambre de moindre qualité.</AlertAsceticBedroomQualityDesc>
+  
+  <AlertHumanLeatherApparelSad>Malheureux (cuir humain)</AlertHumanLeatherApparelSad>
+  <AlertHumanLeatherApparelSadDesc>Les colons suivants portent des vêtements fait en cuir humain et trouvent cela malaisant. Trouvez-leur des vêtements fait d'une autre matière.</AlertHumanLeatherApparelSadDesc>
+  
+  <AlertEnemyNeedsRescue>Ennemi a besoin de secours</AlertEnemyNeedsRescue>
+  <AlertEnemyNeedsRescueDesc>Un ennemi est hors-de-combat. Vous pouvez le capturer, le dévêtir ou l'achever.</AlertEnemyNeedsRescueDesc>
+  
+  <AlertAllyNeedsRescue>Allié a besoin de secours</AlertAllyNeedsRescue>
+  <AlertAllyNeedsRescueDesc>Un allié est hors de combat. Vous devriez le secourir.</AlertAllyNeedsRescueDesc>
+  
+  
+</LanguageData>
