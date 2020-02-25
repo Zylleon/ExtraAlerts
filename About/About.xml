@@ -2,11 +2,14 @@
 <ModMetaData>
   <name>Extra Alerts</name>
   <author>Zylle</author>
-  <supportedVersions><li>1.0</li></supportedVersions>
+  <supportedVersions>
+	<li>1.0</li>
+	<li>1.1</li>
+  </supportedVersions>
   <description>
 Adds some useful alerts, with options to disable ones you don't want. Includes:
 [list]
-[*]Caravan paused and awaiting instructions
+[*]Caravan paused and awaiting instructions (1.0 only)
 [*]Tainted clothing
 [*]Human leather worn by pawn who doesn't like it
 [*]Lovers not sharing a bed
@@ -19,6 +22,7 @@ Adds some useful alerts, with options to disable ones you don't want. Includes:
 Safe to add and remove
 
 Japanese translation by Proxyer
+French translation by DrTCS
 
 [url=https://github.com/Zylleon/ExtraAlerts/releases/latest]Github link[/url]
 
