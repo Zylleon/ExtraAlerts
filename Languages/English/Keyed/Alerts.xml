@@ -30,5 +30,7 @@
   <AlertAllyNeedsRescue>Ally needs rescue</AlertAllyNeedsRescue>
   <AlertAllyNeedsRescueDesc>An ally is incapacitated. You might want to rescue them.</AlertAllyNeedsRescueDesc>
   
+  <AlertNeutralNeedsRescue>Humanoid needs rescue</AlertNeutralNeedsRescue>
+  <AlertNeutralNeedsRescueDesc>A neutral person is incapacitated. You might want to rescue or capture them.</AlertNeutralNeedsRescueDesc>
   
 </LanguageData>

@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Z_MoreAlerts
 {
-    public class Alert_AllyNeedsRescue : Alert_Critical
+    public class Alert_EnemyNeedsRescue : Alert_SemiCritical
     {
         private IEnumerable<Pawn> EnemiesNeedingRescue
         {
@@ -21,11 +21,6 @@ namespace Z_MoreAlerts
                     }
                 }
             }
-        }
-
-        public static bool NeedsRescue(Pawn p)
-        {
-            return p.Downed && !p.InBed() && !(p.ParentHolder is Pawn_CarryTracker) && (p.jobs.jobQueue == null || p.jobs.jobQueue.Count <= 0 || !p.jobs.jobQueue.Peek().job.CanBeginNow(p, false));
         }
 
         public override string GetLabel()
@@ -54,15 +49,6 @@ namespace Z_MoreAlerts
                 return AlertReport.Inactive;
             }
             return AlertReport.CulpritsAre(this.EnemiesNeedingRescue.ToList());
-        }
-
-        protected override Color BGColor
-        {
-            get
-            {
-                float num = Pulser.PulseBrightness(0.5f, Pulser.PulseBrightness(0.5f, 0.6f));
-                return new Color(num, num, num) * Color.grey;
-            }
         }
     }
 }

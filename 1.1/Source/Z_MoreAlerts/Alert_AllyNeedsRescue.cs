@@ -8,18 +8,20 @@ using UnityEngine;
 
 namespace Z_MoreAlerts
 {
-    public class Alert_EnemyNeedsRescue : Alert_Critical
+    public class Alert_AllyNeedsRescue : Alert_SemiCritical
     {
         private IEnumerable<Pawn> AlliesNeedingRescue
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.Humanlike && p.Faction != Faction.OfPlayer && !p.HostileTo(Faction.OfPlayer)))
-
+                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.Humanlike && p.Faction != null && p.Faction != Faction.OfPlayer).ToList())
                 {
-                    if (Alert_EnemyNeedsRescue.NeedsRescue(p))
+                    if (!p.IsPrisoner && p.Faction.AllyOrNeutralTo(Faction.OfPlayer))
                     {
-                        yield return p;
+                        if (Alert_AllyNeedsRescue.NeedsRescue(p))
+                        {
+                            yield return p;
+                        }
                     }
                 }
             }
@@ -57,15 +59,5 @@ namespace Z_MoreAlerts
             }
             return AlertReport.CulpritsAre(this.AlliesNeedingRescue.ToList());
         }
-
-        protected override Color BGColor
-        {
-            get
-            {
-                float num = Pulser.PulseBrightness(0.5f, Pulser.PulseBrightness(0.5f, 0.6f));
-                return new Color(num, num, num) * Color.grey;
-            }
-        }
-
     }
 }
