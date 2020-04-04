@@ -25,7 +25,7 @@
   <AlertHumanLeatherApparelSadDesc>Эти колонисты одеты в одежду из человеческой кожи, которая их беспокоит. Дайте им одежду из чего-нибудь другого.</AlertHumanLeatherApparelSadDesc>
   
   <AlertEnemyNeedsRescue>Враг нуждается в спасении</AlertEnemyNeedsRescue>
-  <AlertEnemyNeedsRescueDesc>Враг недееспособен. Вы можете захватить их, раздеть или прикончить.</AlertEnemyNeedsRescueDesc>
+  <AlertEnemyNeedsRescueDesc>Враг недееспособен. Вы можете захватить его, раздеть или прикончить.</AlertEnemyNeedsRescueDesc>
   
   <AlertAllyNeedsRescue>Союзник нуждается в спасении</AlertAllyNeedsRescue>
   <AlertAllyNeedsRescueDesc>Союзник недееспособен. Возможно, вы захотите его спасти.</AlertAllyNeedsRescueDesc>
