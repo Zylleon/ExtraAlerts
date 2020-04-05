@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <ExtraAlerts_ModName>Extra Alerts</ExtraAlerts_ModName>
+
+  <AlertNotBondedAnimalMaster>Привязанность</AlertNotBondedAnimalMaster>
+  <AlertNotBondedAnimalMasterDesc>Животное не назначено своему связанному хозяину.</AlertNotBondedAnimalMasterDesc>
+
+  <AlertDeadMansApparel>Испорченная одежда</AlertDeadMansApparel>
+  <AlertDeadMansApparelDesc>Эти колонисты носят одежду из трупа, что их очень огорчает:\n\n{0}\nДайте им чистую одежду.</AlertDeadMansApparelDesc>
+  
+  <AlertWantToSleepWith>Влюбленные разлучены</AlertWantToSleepWith>
+  <AlertWantToSleepWithDesc>Эти колонисты хотят спать вместе. Подумайте о том, чтобы назначить им двуспальную кровать.</AlertWantToSleepWithDesc>
+  
+  <AlertSharingBedUnhappy>Несчастные делят постель</AlertSharingBedUnhappy>
+  <AlertSharingBedUnhappyDesc>Эти колонисты делят постель, но не являются любовниками. Подумайте о том, чтобы выделить им отдельные кровати.</AlertSharingBedUnhappyDesc>
+  
+  <AlertPausedCaravan>Караван в режиме ожидания</AlertPausedCaravan>
+  <AlertPausedCaravanDesc>Один из ваших караванов остановился и, возможно, ждет указаний.</AlertPausedCaravanDesc>
+  
+  <AlertAsceticBedroomQuality>У аскета хорошая комната</AlertAsceticBedroomQuality>
+  <AlertAsceticBedroomQualityDesc>Аскетичный колонист недоволен тем, что его спальня слишком хороша. Подумайте о том, чтобы убрать удобства или назначить их в худшую спальню.</AlertAsceticBedroomQualityDesc>
+  
+  <AlertHumanLeatherApparelSad>Одежда из человеческой кожи</AlertHumanLeatherApparelSad>
+  <AlertHumanLeatherApparelSadDesc>Эти колонисты одеты в одежду из человеческой кожи, которая их беспокоит. Дайте им одежду из чего-нибудь другого.</AlertHumanLeatherApparelSadDesc>
+  
+  <AlertEnemyNeedsRescue>Враг нуждается в спасении</AlertEnemyNeedsRescue>
+  <AlertEnemyNeedsRescueDesc>Враг недееспособен. Вы можете захватить его, раздеть или прикончить.</AlertEnemyNeedsRescueDesc>
+  
+  <AlertAllyNeedsRescue>Союзник нуждается в спасении</AlertAllyNeedsRescue>
+  <AlertAllyNeedsRescueDesc>Союзник недееспособен. Возможно, вы захотите его спасти.</AlertAllyNeedsRescueDesc>
+  
+  <AlertNeutralNeedsRescue>Незнакомец нуждается в спасении</AlertNeutralNeedsRescue>
+  <AlertNeutralNeedsRescueDesc>Незнакомец недееспособен. Возможно, вы захотите спасти или захватить его.</AlertNeutralNeedsRescueDesc>
+  
+</LanguageData>
