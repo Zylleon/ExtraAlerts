@@ -30,4 +30,7 @@
   <AlertAllyNeedsRescue>救助が必要な同盟者</AlertAllyNeedsRescue>
   <AlertAllyNeedsRescueDesc>無能力化された味方です。彼らを救助したほうがいいかもしれません。</AlertAllyNeedsRescueDesc>
 
+  <AlertNeutralNeedsRescue>救助が必要な人</AlertNeutralNeedsRescue>
+  <AlertNeutralNeedsRescueDesc>派閥に属していない無力化された人です。あなたは救出するか捕らえることもできます。</AlertNeutralNeedsRescueDesc>
+
 </LanguageData>
