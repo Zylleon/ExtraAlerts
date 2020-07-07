@@ -25,12 +25,21 @@
   <AlertHumanLeatherApparelSadDesc>これらの入植者たちは人間の皮で出来た衣服を身に着けているので、不幸を感じています。他の素材で作られた衣服を着せてください。</AlertHumanLeatherApparelSadDesc>
 
   <AlertEnemyNeedsRescue>救助が必要な敵</AlertEnemyNeedsRescue>
-  <AlertEnemyNeedsRescueDesc>無能力化された敵です。囚人にしたり、衣服を脱がせたり、トドメを刺したりできます。</AlertEnemyNeedsRescueDesc>
+  <AlertEnemyNeedsRescueDesc>無力化された敵です。囚人にしたり、衣服を脱がせたり、トドメを刺したりできます。</AlertEnemyNeedsRescueDesc>
 
   <AlertAllyNeedsRescue>救助が必要な同盟者</AlertAllyNeedsRescue>
-  <AlertAllyNeedsRescueDesc>無能力化された味方です。彼らを救助したほうがいいかもしれません。</AlertAllyNeedsRescueDesc>
+  <AlertAllyNeedsRescueDesc>無力化された味方です。彼らを救助したほうがいいかもしれません。</AlertAllyNeedsRescueDesc>
 
   <AlertNeutralNeedsRescue>救助が必要な人</AlertNeutralNeedsRescue>
   <AlertNeutralNeedsRescueDesc>派閥に属していない無力化された人です。あなたは救出するか捕らえることもできます。</AlertNeutralNeedsRescueDesc>
+
+  <AlertUnroofedElectrical>屋根がない電気製品</AlertUnroofedElectrical>
+  <AlertUnroofedElectricalDesc>これらの建築物には屋根がなく、雨が降るとショートします。</AlertUnroofedElectricalDesc>
+
+  <AlertAnimalHypothermia>動物が低体温症</AlertAnimalHypothermia>
+  <AlertAnimalHypothermiaDesc>これらのコロニーの動物たちは低体温症です。</AlertAnimalHypothermiaDesc>
+
+  <AlertAnimalHeatstroke>動物が熱中症</AlertAnimalHeatstroke>
+  <AlertAnimalHeatstrokeDesc>これらのコロニーの動物たちは熱中症です。</AlertAnimalHeatstrokeDesc>
 
 </LanguageData>
