@@ -42,15 +42,12 @@ namespace Z_MoreAlerts
             }
 
             List<Thing> culprits = new List<Thing>();
-
             foreach(Building b in this.UnroofedBuildings)
             {
                 culprits.Add((Thing)b);
             }
 
             return AlertReport.CulpritsAre(culprits);
-            //return AlertReport.CulpritsAre()
-            //return AlertReport.CulpritsAre(this.UnroofedBuildings.ToList());
         }
 
         public override string GetLabel()
@@ -60,14 +57,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            //StringBuilder stringBuilder = new StringBuilder();
-            //foreach (Building current in this.UnroofedBuildings)
-            //{
-            //    stringBuilder.AppendLine("    " + current.Label);
-            //}
-            //return string.Format("AlertUnroofedElectricalDesc".Translate(), stringBuilder.ToString());
             return "AlertUnroofedElectricalDesc".Translate();
-
         }
     }
 }

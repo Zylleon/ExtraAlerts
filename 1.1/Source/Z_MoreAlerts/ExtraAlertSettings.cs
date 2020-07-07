@@ -16,6 +16,8 @@ namespace Z_MoreAlerts
         public static bool cb_allyRescue = true;
         public static bool cb_neutralRescue = true;
         public static bool cb_unroofedElectrical = true;
+        public static bool cb_animalHypothermia = true;
+        public static bool cb_animalHeatstroke = true;
 
 
         public override void ExposeData()
@@ -30,10 +32,11 @@ namespace Z_MoreAlerts
             Scribe_Values.Look(ref cb_allyRescue, "cb_allyRescue", true);
             Scribe_Values.Look(ref cb_neutralRescue, "cb_neutralRescue", true);
             Scribe_Values.Look(ref cb_unroofedElectrical, "cb_unroofedElectrical", true);
+            Scribe_Values.Look(ref cb_animalHypothermia, "cb_animalHypothermia", true);
+            Scribe_Values.Look(ref cb_animalHeatstroke, "cb_animalHeatstroke", true);
 
         }
     }
-
 
 
     public class ExtraAlertsMod : Mod
@@ -47,7 +50,6 @@ namespace Z_MoreAlerts
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
-
             inRect.width = 450f;
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
@@ -61,6 +63,8 @@ namespace Z_MoreAlerts
             listingStandard.CheckboxLabeled("AlertAllyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_allyRescue, "AlertAllyNeedsRescueDesc".Translate());
             listingStandard.CheckboxLabeled("AlertNeutralNeedsRescue".Translate(), ref ExtraAlertSettings.cb_neutralRescue, "AlertNeutralNeedsRescueDesc".Translate());
             listingStandard.CheckboxLabeled("AlertUnroofedElectrical".Translate(), ref ExtraAlertSettings.cb_unroofedElectrical, "AlertUnroofedElectricalDesc".Translate());
+            listingStandard.CheckboxLabeled("AlertAnimalHypothermia".Translate(), ref ExtraAlertSettings.cb_animalHypothermia, "AlertAnimalHypothermiaDesc".Translate());
+            listingStandard.CheckboxLabeled("AlertAnimalHeatstroke".Translate(), ref ExtraAlertSettings.cb_animalHeatstroke, "AlertAnimalHeatstrokeDesc".Translate());
 
 
             listingStandard.End();

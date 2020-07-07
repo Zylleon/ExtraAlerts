@@ -36,4 +36,12 @@
   <AlertUnroofedElectrical>Unroofed electrical</AlertUnroofedElectrical>
   <AlertUnroofedElectricalDesc>These buildings are unroofed and will short circuit in rain.</AlertUnroofedElectricalDesc>
   
+    
+  <AlertAnimalHypothermia>Animal hypothermia</AlertAnimalHypothermia>
+  <AlertAnimalHypothermiaDesc>These colony animals have hypothermia.</AlertAnimalHypothermiaDesc>
+    
+  <AlertAnimalHeatstroke>Animal heatstroke</AlertAnimalHeatstroke>
+  <AlertAnimalHeatstrokeDesc>These colony animals have heatstroke.</AlertAnimalHeatstrokeDesc>
+  
+  
 </LanguageData>
