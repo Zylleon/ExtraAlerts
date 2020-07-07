@@ -105,6 +105,7 @@
     <Compile Include="Alert_SemiCritical.cs" />
     <Compile Include="Alert_SharingBedUnhappy.cs" />
     <Compile Include="Alert_TaintedClothing.cs" />
+    <Compile Include="Alert_UnroofedElectrical.cs" />
     <Compile Include="Alert_WantToSleepWith.cs" />
     <Compile Include="ExtraAlertSettings.cs" />
     <Compile Include="MoreAlertsDefOf.cs" />

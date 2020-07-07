@@ -9,17 +9,18 @@
    <packageId>zylle.ExtraAlerts</packageId>
   <description>
 Adds some useful alerts, with options to disable ones you don't want. Includes:
-[list]
-[*]Caravan paused and awaiting instructions
-[*]Tainted clothing
-[*]Human leather worn by pawn who doesn't like it
-[*]Lovers not sharing a bed
-[*]Non-lovers sharing a bed
-[*]Ascetic has nice bedroom
-[*]Bonded animal not assigned to bonded master
-[*]Ally needs rescue
-[*]Enemy needs rescues
-[/list]
+
+- Caravan paused and awaiting instructions
+- Tainted clothing
+- Human leather worn by pawn who doesn't like it
+- Lovers not sharing a bed
+- Non-lovers sharing a bed
+- Ascetic has nice bedroom
+- Bonded animal not assigned to bonded master
+- Ally downed
+- Enemy downed
+- Unroofed electrical buildings that will short circuit in rain, like batteries
+
 Safe to add and remove
 
 

@@ -25,10 +25,6 @@ namespace Z_MoreAlerts
 
         public override string GetLabel()
         {
-            if (this.EnemiesNeedingRescue.Count<Pawn>() == 1)
-            {
-                return "AlertEnemyNeedsRescue".Translate();
-            }
             return "AlertEnemyNeedsRescue".Translate();
         }
 

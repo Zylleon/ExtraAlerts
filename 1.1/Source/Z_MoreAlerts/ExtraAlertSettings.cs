@@ -15,6 +15,7 @@ namespace Z_MoreAlerts
         public static bool cb_enemyRescue = true;
         public static bool cb_allyRescue = true;
         public static bool cb_neutralRescue = true;
+        public static bool cb_unroofedElectrical = true;
 
 
         public override void ExposeData()
@@ -28,6 +29,7 @@ namespace Z_MoreAlerts
             Scribe_Values.Look(ref cb_enemyRescue, "cb_enemyRescue", true);
             Scribe_Values.Look(ref cb_allyRescue, "cb_allyRescue", true);
             Scribe_Values.Look(ref cb_neutralRescue, "cb_neutralRescue", true);
+            Scribe_Values.Look(ref cb_unroofedElectrical, "cb_unroofedElectrical", true);
 
         }
     }
@@ -58,6 +60,7 @@ namespace Z_MoreAlerts
             listingStandard.CheckboxLabeled("AlertEnemyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_enemyRescue, "AlertEnemyNeedsRescueDesc".Translate());
             listingStandard.CheckboxLabeled("AlertAllyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_allyRescue, "AlertAllyNeedsRescueDesc".Translate());
             listingStandard.CheckboxLabeled("AlertNeutralNeedsRescue".Translate(), ref ExtraAlertSettings.cb_neutralRescue, "AlertNeutralNeedsRescueDesc".Translate());
+            listingStandard.CheckboxLabeled("AlertUnroofedElectrical".Translate(), ref ExtraAlertSettings.cb_unroofedElectrical, "AlertUnroofedElectricalDesc".Translate());
 
 
             listingStandard.End();
