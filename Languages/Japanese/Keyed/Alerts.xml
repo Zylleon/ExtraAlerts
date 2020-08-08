@@ -1,28 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
   <ExtraAlerts_ModName>Extra Alerts</ExtraAlerts_ModName>
 
-  <AlertNotBondedAnimalMaster>動物(絆)の主人が違う</AlertNotBondedAnimalMaster>
-  <AlertNotBondedAnimalMasterDesc>絆で結ばれた主人に動物が割り当てられていません</AlertNotBondedAnimalMasterDesc>
-
-  <AlertDeadMansApparel>汚れた衣服を着用</AlertDeadMansApparel>
-  <AlertDeadMansApparelDesc>これらの入植者たちは死人が着ていた服を着ているので、心情が悪化しています：\n\n{0}\n清潔な服を着せてください。</AlertDeadMansApparelDesc>
-
-  <AlertWantToSleepWith>恋人が別々なベッド</AlertWantToSleepWith>
-  <AlertWantToSleepWithDesc>これらの入植者たちは恋人と一緒に寝たいと思っています。ダブルベッドを割り当てることを検討してください。</AlertWantToSleepWithDesc>
-
-  <AlertSharingBedUnhappy>他人とベッドを共有</AlertSharingBedUnhappy>
-  <AlertSharingBedUnhappyDesc>これらの入植者たちは恋人でも無いのにベッドを共有しています。彼らを別々のベッドに割り当てることを検討してください。</AlertSharingBedUnhappyDesc>
-
-  <AlertPausedCaravan>キャラバンが待機中</AlertPausedCaravan>
-  <AlertPausedCaravanDesc>キャラバン隊の1つがワールドマップ上で一時停止しており、あなたの指示を待っている可能性があります。</AlertPausedCaravanDesc>
-
-  <AlertAsceticBedroomQuality>禁欲者に良い部屋</AlertAsceticBedroomQuality>
-  <AlertAsceticBedroomQualityDesc>禁欲の特徴を持つ入植者は自分の寝室があまりにも豪華な事に不満を抱いています。美しさを取り除くか、より評価が悪い寝室へ割り当てることを検討してください。</AlertAsceticBedroomQualityDesc>
-
-  <AlertHumanLeatherApparelSad>人の皮製品で不幸</AlertHumanLeatherApparelSad>
-  <AlertHumanLeatherApparelSadDesc>これらの入植者たちは人間の皮で出来た衣服を身に着けているので、不幸を感じています。他の素材で作られた衣服を着せてください。</AlertHumanLeatherApparelSadDesc>
+  <!-- Urgent -->
+  <ExtraAlerts_Urgent>緊急</ExtraAlerts_Urgent>
 
   <AlertEnemyNeedsRescue>救助が必要な敵</AlertEnemyNeedsRescue>
   <AlertEnemyNeedsRescueDesc>無力化された敵です。囚人にしたり、衣服を脱がせたり、トドメを刺したりできます。</AlertEnemyNeedsRescueDesc>
@@ -33,13 +15,58 @@
   <AlertNeutralNeedsRescue>救助が必要な人</AlertNeutralNeedsRescue>
   <AlertNeutralNeedsRescueDesc>派閥に属していない無力化された人です。あなたは救出するか捕らえることもできます。</AlertNeutralNeedsRescueDesc>
 
-  <AlertUnroofedElectrical>屋根がない電気製品</AlertUnroofedElectrical>
-  <AlertUnroofedElectricalDesc>これらの建築物には屋根がなく、雨が降るとショートします。</AlertUnroofedElectricalDesc>
+  <AlertBlight>疫病</AlertBlight>
+  <AlertBlightDesc>これらの作物に疫病が蔓延する前に,疫病に冒された作物を,刈り取るか焼却するべきです.</AlertBlightDesc>
+
+
+  <!-- Mood -->
+  <ExtraAlerts_Mood>心情</ExtraAlerts_Mood>
+
+  <AlertNotBondedAnimalMaster>動物(絆)の主人が違う</AlertNotBondedAnimalMaster>
+  <AlertNotBondedAnimalMasterDesc>絆で結ばれた主人に動物が割り当てられていません。</AlertNotBondedAnimalMasterDesc>
+
+  <AlertDeadMansApparel>汚れた衣服を着用</AlertDeadMansApparel>
+  <AlertDeadMansApparelDesc>これらの入植者たちは死人が着ていた服を着ているので、心情が悪化しています：\n\n{0}\n清潔な服を着せてください。</AlertDeadMansApparelDesc>
+
+  <AlertHumanLeatherApparelSad>人の皮製品で不幸</AlertHumanLeatherApparelSad>
+  <AlertHumanLeatherApparelSadDesc>これらの入植者たちは人間の皮で出来た衣服を身に着けているので、不幸を感じています。他の素材で作られた衣服を着せてください。</AlertHumanLeatherApparelSadDesc>
+
+  <AlertWantToSleepWith>恋人が別々なベッド</AlertWantToSleepWith>
+  <AlertWantToSleepWithDesc>これらの入植者たちは恋人と一緒に寝たいと思っています。ダブルベッドを割り当てることを検討してください。</AlertWantToSleepWithDesc>
+
+  <AlertSharingBedUnhappy>他人とベッドを共有</AlertSharingBedUnhappy>
+  <AlertSharingBedUnhappyDesc>これらの入植者たちは恋人でも無いのにベッドを共有しています。彼らを別々のベッドに割り当てることを検討してください。</AlertSharingBedUnhappyDesc>
+
+  <AlertAsceticBedroomQuality>禁欲者に良い部屋</AlertAsceticBedroomQuality>
+  <AlertAsceticBedroomQualityDesc>禁欲の特徴を持つ入植者は自分の寝室があまりにも豪華な事に不満を抱いています。美しさを取り除くか、より評価が悪い寝室へ割り当てることを検討してください。</AlertAsceticBedroomQualityDesc>
+
+
+  <!-- Animals -->
+  <ExtraAlerts_Animals>動物</ExtraAlerts_Animals>
 
   <AlertAnimalHypothermia>動物が低体温症</AlertAnimalHypothermia>
   <AlertAnimalHypothermiaDesc>これらのコロニーの動物たちは低体温症です。</AlertAnimalHypothermiaDesc>
 
   <AlertAnimalHeatstroke>動物が熱中症</AlertAnimalHeatstroke>
   <AlertAnimalHeatstrokeDesc>これらのコロニーの動物たちは熱中症です。</AlertAnimalHeatstrokeDesc>
+
+  <AlertAnimalGoingWild>動物が飼いならし不足</AlertAnimalGoingWild>
+  <AlertAnimalGoingWildDesc>これらのコロニーの動物たちはすぐに野生化します。</AlertAnimalGoingWildDesc>
+
+
+  <!-- Misc -->
+  <ExtraAlerts_Misc>その他</ExtraAlerts_Misc>
+
+  <AlertPausedCaravan>キャラバンが待機中</AlertPausedCaravan>
+  <AlertPausedCaravanDesc>キャラバン隊の1つがワールドマップ上で一時停止しており、あなたの指示を待っている可能性があります。</AlertPausedCaravanDesc>
+
+  <AlertUnroofedElectrical>屋根がない電気製品</AlertUnroofedElectrical>
+  <AlertUnroofedElectricalDesc>これらの建築物には屋根がなく、雨が降るとショートします。</AlertUnroofedElectricalDesc>
+
+  <AlertTradeCaravan>トレーダー</AlertTradeCaravan>
+  <AlertTradeCaravanDesc>トレーダーが来訪中です。</AlertTradeCaravanDesc>
+
+  <AlertOrbitalTrader>軌道トレーダー</AlertOrbitalTrader>
+  <AlertOrbitalTraderDesc>通信可能な軌道上に宇宙トレーダーが来訪中です。</AlertOrbitalTraderDesc>
 
 </LanguageData>
