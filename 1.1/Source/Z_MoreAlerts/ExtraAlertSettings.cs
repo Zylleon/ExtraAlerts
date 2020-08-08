@@ -70,12 +70,14 @@ namespace Z_MoreAlerts
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
-            inRect.width = 450f;
+            inRect.width = 400f;
             Listing_Standard listing = new Listing_Standard();
             listing.Begin(inRect);
 
             // Urgent
+            Text.Font = GameFont.Medium;
             listing.Label("ExtraAlerts_Urgent".Translate());
+            Text.Font = GameFont.Small;
             listing.CheckboxLabeled("AlertEnemyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_enemyRescue, "AlertEnemyNeedsRescueDesc".Translate());
             listing.CheckboxLabeled("AlertAllyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_allyRescue, "AlertAllyNeedsRescueDesc".Translate());
             listing.CheckboxLabeled("AlertNeutralNeedsRescue".Translate(), ref ExtraAlertSettings.cb_neutralRescue, "AlertNeutralNeedsRescueDesc".Translate());
@@ -83,7 +85,9 @@ namespace Z_MoreAlerts
             listing.Gap();
 
             // Mood
+            Text.Font = GameFont.Medium;
             listing.Label("ExtraAlerts_Mood".Translate());
+            Text.Font = GameFont.Small;
             listing.CheckboxLabeled("AlertNotBondedAnimalMaster".Translate(), ref ExtraAlertSettings.cb_bondedAnimal, "AlertNotBondedAnimalMasterDesc".Translate());
             listing.CheckboxLabeled("AlertDeadMansApparel".Translate(), ref ExtraAlertSettings.cb_deadApparel, "AlertDeadMansApparelDesc".Translate());
             listing.CheckboxLabeled("AlertHumanLeatherApparelSad".Translate(), ref ExtraAlertSettings.cb_humanApparel, "AlertHumanLeatherApparelSadDesc".Translate());
@@ -93,13 +97,17 @@ namespace Z_MoreAlerts
             listing.Gap();
 
             // Animals
+            Text.Font = GameFont.Medium;
             listing.Label("ExtraAlerts_Animals".Translate());
+            Text.Font = GameFont.Small;
             listing.CheckboxLabeled("AlertAnimalHypothermia".Translate(), ref ExtraAlertSettings.cb_animalHypothermia, "AlertAnimalHypothermiaDesc".Translate());
             listing.CheckboxLabeled("AlertAnimalHeatstroke".Translate(), ref ExtraAlertSettings.cb_animalHeatstroke, "AlertAnimalHeatstrokeDesc".Translate());
             listing.Gap();
 
             // Misc
+            Text.Font = GameFont.Medium;
             listing.Label("ExtraAlerts_Misc".Translate());
+            Text.Font = GameFont.Small;
             listing.CheckboxLabeled("AlertUnroofedElectrical".Translate(), ref ExtraAlertSettings.cb_unroofedElectrical, "AlertUnroofedElectricalDesc".Translate());
             listing.CheckboxLabeled("AlertTradeCaravan".Translate(), ref ExtraAlertSettings.cb_trader, "AlertTradeCaravanDesc".Translate());
             listing.CheckboxLabeled("AlertOrbitalTrader".Translate(), ref ExtraAlertSettings.cb_tradeOrbital, "AlertOrbitalTraderDesc".Translate());
