@@ -100,6 +100,7 @@
     <Compile Include="Alert_AnimalHypothermia.cs" />
     <Compile Include="Alert_AsceticBedroomQuality.cs" />
     <Compile Include="Alert_AllyNeedsRescue.cs" />
+    <Compile Include="Alert_Blight.cs" />
     <Compile Include="Alert_EnemyNeedsRescue.cs" />
     <Compile Include="Alert_HumanLeatherApparelSad.cs" />
     <Compile Include="Alert_NeutralNeedsRescue.cs" />
@@ -107,6 +108,8 @@
     <Compile Include="Alert_SemiCritical.cs" />
     <Compile Include="Alert_SharingBedUnhappy.cs" />
     <Compile Include="Alert_TaintedClothing.cs" />
+    <Compile Include="Alert_TraderOrbital.cs" />
+    <Compile Include="Alert_TraderOnMap.cs" />
     <Compile Include="Alert_UnroofedElectrical.cs" />
     <Compile Include="Alert_WantToSleepWith.cs" />
     <Compile Include="ExtraAlertSettings.cs" />

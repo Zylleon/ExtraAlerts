@@ -6,34 +6,54 @@ namespace Z_MoreAlerts
 {
     public class ExtraAlertSettings : ModSettings
     {
-        public static bool cb_bondedAnimal = true;
-        public static bool cb_deadApparel = true;
-        public static bool cb_Lovers = true;
-        public static bool cb_sharedBed = true;
-        public static bool cb_asceticBedroom = true;
-        public static bool cb_humanApparel = true;
+        // Urgent
         public static bool cb_enemyRescue = true;
         public static bool cb_allyRescue = true;
         public static bool cb_neutralRescue = true;
-        public static bool cb_unroofedElectrical = true;
+        public static bool cb_blight = true;
+
+        // Mood
+        public static bool cb_bondedAnimal = true;
+        public static bool cb_deadApparel = true;
+        public static bool cb_humanApparel = true;
+        public static bool cb_Lovers = true;
+        public static bool cb_sharedBed = true;
+        public static bool cb_asceticBedroom = true;
+
+        // Animals
         public static bool cb_animalHypothermia = true;
         public static bool cb_animalHeatstroke = true;
+
+        // Misc
+        public static bool cb_unroofedElectrical = true;
+        public static bool cb_trader = true;
+        public static bool cb_tradeOrbital = true;
 
 
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref cb_bondedAnimal, "cb_bondedAnimal", true);
-            Scribe_Values.Look(ref cb_deadApparel, "cb_deadApparel", true);
-            Scribe_Values.Look(ref cb_Lovers, "cb_Lovers", true);
-            Scribe_Values.Look(ref cb_sharedBed, "cb_sharedBed", true);
-            Scribe_Values.Look(ref cb_asceticBedroom, "cb_asceticBedroom", true);
-            Scribe_Values.Look(ref cb_humanApparel, "cb_humanApparel", true);
+            // Urgent
             Scribe_Values.Look(ref cb_enemyRescue, "cb_enemyRescue", true);
             Scribe_Values.Look(ref cb_allyRescue, "cb_allyRescue", true);
             Scribe_Values.Look(ref cb_neutralRescue, "cb_neutralRescue", true);
-            Scribe_Values.Look(ref cb_unroofedElectrical, "cb_unroofedElectrical", true);
+            Scribe_Values.Look(ref cb_blight, "cb_blight", true);
+
+            // Mood
+            Scribe_Values.Look(ref cb_bondedAnimal, "cb_bondedAnimal", true);
+            Scribe_Values.Look(ref cb_deadApparel, "cb_deadApparel", true);
+            Scribe_Values.Look(ref cb_humanApparel, "cb_humanApparel", true);
+            Scribe_Values.Look(ref cb_Lovers, "cb_Lovers", true);
+            Scribe_Values.Look(ref cb_sharedBed, "cb_sharedBed", true);
+            Scribe_Values.Look(ref cb_asceticBedroom, "cb_asceticBedroom", true);
+
+            // Animals
             Scribe_Values.Look(ref cb_animalHypothermia, "cb_animalHypothermia", true);
             Scribe_Values.Look(ref cb_animalHeatstroke, "cb_animalHeatstroke", true);
+
+            // Other
+            Scribe_Values.Look(ref cb_unroofedElectrical, "cb_unroofedElectrical", true);
+            Scribe_Values.Look(ref cb_trader, "cb_trader", true);
+            Scribe_Values.Look(ref cb_tradeOrbital, "cb_tradeOrbital", true);
 
         }
     }
@@ -51,23 +71,42 @@ namespace Z_MoreAlerts
         public override void DoSettingsWindowContents(Rect inRect)
         {
             inRect.width = 450f;
-            Listing_Standard listingStandard = new Listing_Standard();
-            listingStandard.Begin(inRect);
-            listingStandard.CheckboxLabeled("AlertNotBondedAnimalMaster".Translate(), ref ExtraAlertSettings.cb_bondedAnimal, "AlertNotBondedAnimalMasterDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertDeadMansApparel".Translate(), ref ExtraAlertSettings.cb_deadApparel, "AlertDeadMansApparelDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertWantToSleepWith".Translate(), ref ExtraAlertSettings.cb_Lovers, "AlertWantToSleepWithDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertSharingBedUnhappy".Translate(), ref ExtraAlertSettings.cb_sharedBed, "AlertSharingBedUnhappyDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertAsceticBedroomQuality".Translate(), ref ExtraAlertSettings.cb_asceticBedroom, "AlertAsceticBedroomQualityDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertHumanLeatherApparelSad".Translate(), ref ExtraAlertSettings.cb_humanApparel, "AlertHumanLeatherApparelSadDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertEnemyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_enemyRescue, "AlertEnemyNeedsRescueDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertAllyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_allyRescue, "AlertAllyNeedsRescueDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertNeutralNeedsRescue".Translate(), ref ExtraAlertSettings.cb_neutralRescue, "AlertNeutralNeedsRescueDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertUnroofedElectrical".Translate(), ref ExtraAlertSettings.cb_unroofedElectrical, "AlertUnroofedElectricalDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertAnimalHypothermia".Translate(), ref ExtraAlertSettings.cb_animalHypothermia, "AlertAnimalHypothermiaDesc".Translate());
-            listingStandard.CheckboxLabeled("AlertAnimalHeatstroke".Translate(), ref ExtraAlertSettings.cb_animalHeatstroke, "AlertAnimalHeatstrokeDesc".Translate());
+            Listing_Standard listing = new Listing_Standard();
+            listing.Begin(inRect);
+
+            // Urgent
+            listing.Label("ExtraAlerts_Urgent".Translate());
+            listing.CheckboxLabeled("AlertEnemyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_enemyRescue, "AlertEnemyNeedsRescueDesc".Translate());
+            listing.CheckboxLabeled("AlertAllyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_allyRescue, "AlertAllyNeedsRescueDesc".Translate());
+            listing.CheckboxLabeled("AlertNeutralNeedsRescue".Translate(), ref ExtraAlertSettings.cb_neutralRescue, "AlertNeutralNeedsRescueDesc".Translate());
+            listing.CheckboxLabeled("AlertBlight".Translate(), ref ExtraAlertSettings.cb_blight, "AlertBlightDesc".Translate());
+            listing.Gap();
+
+            // Mood
+            listing.Label("ExtraAlerts_Mood".Translate());
+            listing.CheckboxLabeled("AlertNotBondedAnimalMaster".Translate(), ref ExtraAlertSettings.cb_bondedAnimal, "AlertNotBondedAnimalMasterDesc".Translate());
+            listing.CheckboxLabeled("AlertDeadMansApparel".Translate(), ref ExtraAlertSettings.cb_deadApparel, "AlertDeadMansApparelDesc".Translate());
+            listing.CheckboxLabeled("AlertHumanLeatherApparelSad".Translate(), ref ExtraAlertSettings.cb_humanApparel, "AlertHumanLeatherApparelSadDesc".Translate());
+            listing.CheckboxLabeled("AlertWantToSleepWith".Translate(), ref ExtraAlertSettings.cb_Lovers, "AlertWantToSleepWithDesc".Translate());
+            listing.CheckboxLabeled("AlertSharingBedUnhappy".Translate(), ref ExtraAlertSettings.cb_sharedBed, "AlertSharingBedUnhappyDesc".Translate());
+            listing.CheckboxLabeled("AlertAsceticBedroomQuality".Translate(), ref ExtraAlertSettings.cb_asceticBedroom, "AlertAsceticBedroomQualityDesc".Translate());
+            listing.Gap();
+
+            // Animals
+            listing.Label("ExtraAlerts_Animals".Translate());
+            listing.CheckboxLabeled("AlertAnimalHypothermia".Translate(), ref ExtraAlertSettings.cb_animalHypothermia, "AlertAnimalHypothermiaDesc".Translate());
+            listing.CheckboxLabeled("AlertAnimalHeatstroke".Translate(), ref ExtraAlertSettings.cb_animalHeatstroke, "AlertAnimalHeatstrokeDesc".Translate());
+            listing.Gap();
+
+            // Misc
+            listing.Label("ExtraAlerts_Misc".Translate());
+            listing.CheckboxLabeled("AlertUnroofedElectrical".Translate(), ref ExtraAlertSettings.cb_unroofedElectrical, "AlertUnroofedElectricalDesc".Translate());
+            listing.CheckboxLabeled("AlertTradeCaravan".Translate(), ref ExtraAlertSettings.cb_trader, "AlertTradeCaravanDesc".Translate());
+            listing.CheckboxLabeled("AlertOrbitalTrader".Translate(), ref ExtraAlertSettings.cb_tradeOrbital, "AlertOrbitalTraderDesc".Translate());
 
 
-            listingStandard.End();
+
+            listing.End();
 
             base.DoSettingsWindowContents(inRect);
         }

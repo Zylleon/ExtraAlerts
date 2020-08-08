@@ -2,27 +2,9 @@
 <LanguageData>
 
   <ExtraAlerts_ModName>Extra Alerts</ExtraAlerts_ModName>
-
-  <AlertNotBondedAnimalMaster>Bonded animal</AlertNotBondedAnimalMaster>
-  <AlertNotBondedAnimalMasterDesc>An animal is not assigned to its bonded master.</AlertNotBondedAnimalMasterDesc>
-
-  <AlertDeadMansApparel>Tainted apparel</AlertDeadMansApparel>
-  <AlertDeadMansApparelDesc>These colonists are wearing apparel from a corpse, which is making them sad:\n\n{0}\nGet them some clean clothing.</AlertDeadMansApparelDesc>
   
-  <AlertWantToSleepWith>Lovers separated</AlertWantToSleepWith>
-  <AlertWantToSleepWithDesc>These colonists want to sleep together. Consider assigning them a double bed.</AlertWantToSleepWithDesc>
-  
-  <AlertSharingBedUnhappy>Unhappy sharing bed</AlertSharingBedUnhappy>
-  <AlertSharingBedUnhappyDesc>These colonists are sharing a bed but are not lovers. Consider assigning them separate beds.</AlertSharingBedUnhappyDesc>
-  
-  <AlertPausedCaravan>Caravan waiting</AlertPausedCaravan>
-  <AlertPausedCaravanDesc>One of your caravans is paused and may be waiting for instructions.</AlertPausedCaravanDesc>
-  
-  <AlertAsceticBedroomQuality>Ascetic has nice room</AlertAsceticBedroomQuality>
-  <AlertAsceticBedroomQualityDesc>An ascetic colonist is unhappy that their bedroom is too nice. Consider removing ameneties or assigning them to a worse bedroom.</AlertAsceticBedroomQualityDesc>
-  
-  <AlertHumanLeatherApparelSad>Unhappy human leather</AlertHumanLeatherApparelSad>
-  <AlertHumanLeatherApparelSadDesc>These colonists are wearing human leather apparel, which they find disturbing. Get them clothing made of something else.</AlertHumanLeatherApparelSadDesc>
+<!-- Urgent -->
+  <ExtraAlerts_Urgent>Urgent</ExtraAlerts_Urgent>
   
   <AlertEnemyNeedsRescue>Enemy downed</AlertEnemyNeedsRescue>
   <AlertEnemyNeedsRescueDesc>An enemy is incapacitated. You can capture them, strip them, or finish them off.</AlertEnemyNeedsRescueDesc>
@@ -33,15 +15,60 @@
   <AlertNeutralNeedsRescue>Humanoid downed</AlertNeutralNeedsRescue>
   <AlertNeutralNeedsRescueDesc>A neutral person is incapacitated. You might want to rescue or capture them.</AlertNeutralNeedsRescueDesc>
   
-  <AlertUnroofedElectrical>Unroofed electrical</AlertUnroofedElectrical>
-  <AlertUnroofedElectricalDesc>These buildings are unroofed and will short circuit in rain.</AlertUnroofedElectricalDesc>
+  <AlertBlight>Blight</AlertBlight>
+  <AlertBlightDesc>These plants are blighted! Cut them before it spreads.</AlertBlightDesc>
   
-    
+  
+<!-- Mood -->
+  <ExtraAlerts_Mood>Mood</ExtraAlerts_Mood>
+
+  <AlertNotBondedAnimalMaster>Bonded animal</AlertNotBondedAnimalMaster>
+  <AlertNotBondedAnimalMasterDesc>An animal is not assigned to its bonded master.</AlertNotBondedAnimalMasterDesc>
+  
+  <AlertDeadMansApparel>Tainted apparel</AlertDeadMansApparel>
+  <AlertDeadMansApparelDesc>These colonists are wearing apparel from a corpse, which is making them sad:\n\n{0}\nGet them some clean clothing.</AlertDeadMansApparelDesc>
+  
+  <AlertHumanLeatherApparelSad>Unhappy human leather</AlertHumanLeatherApparelSad>
+  <AlertHumanLeatherApparelSadDesc>These colonists are wearing human leather apparel, which they find disturbing. Get them clothing made of something else.</AlertHumanLeatherApparelSadDesc>
+
+  <AlertWantToSleepWith>Lovers separated</AlertWantToSleepWith>
+  <AlertWantToSleepWithDesc>These colonists want to sleep together. Consider assigning them a double bed.</AlertWantToSleepWithDesc>
+  
+  <AlertSharingBedUnhappy>Unhappy sharing bed</AlertSharingBedUnhappy>
+  <AlertSharingBedUnhappyDesc>These colonists are sharing a bed but are not lovers. Consider assigning them separate beds.</AlertSharingBedUnhappyDesc>
+  
+  <AlertAsceticBedroomQuality>Ascetic has nice room</AlertAsceticBedroomQuality>
+  <AlertAsceticBedroomQualityDesc>An ascetic colonist is unhappy that their bedroom is too nice. Consider removing ameneties or assigning them to a worse bedroom.</AlertAsceticBedroomQualityDesc>
+  
+  
+<!-- Animals -->
+  <ExtraAlerts_Animals>Animals</ExtraAlerts_Animals>
+  
   <AlertAnimalHypothermia>Animal hypothermia</AlertAnimalHypothermia>
   <AlertAnimalHypothermiaDesc>These colony animals have hypothermia.</AlertAnimalHypothermiaDesc>
     
   <AlertAnimalHeatstroke>Animal heatstroke</AlertAnimalHeatstroke>
   <AlertAnimalHeatstrokeDesc>These colony animals have heatstroke.</AlertAnimalHeatstrokeDesc>
+  
+  <AlertAnimalGoingWild>Animal losing tameness</AlertAnimalGoingWild>
+  <AlertAnimalGoingWildDesc>These colony animals will be wild soon.</AlertAnimalGoingWildDesc>
+  
+  
+<!-- Misc -->
+  <ExtraAlerts_Misc>Other</ExtraAlerts_Misc>
+  
+  <AlertPausedCaravan>Caravan waiting</AlertPausedCaravan>
+  <AlertPausedCaravanDesc>One of your caravans is paused and may be waiting for instructions.</AlertPausedCaravanDesc>
+
+  <AlertUnroofedElectrical>Unroofed electrical</AlertUnroofedElectrical>
+  <AlertUnroofedElectricalDesc>These buildings are unroofed and will short circuit in rain.</AlertUnroofedElectricalDesc>
+  
+  <AlertTradeCaravan>Trader</AlertTradeCaravan>
+  <AlertTradeCaravanDesc>A trader is visiting</AlertTradeCaravanDesc>
+  
+  <AlertOrbitalTrader>Orbital trader</AlertOrbitalTrader>
+  <AlertOrbitalTraderDesc>An orbitral trader is in range</AlertOrbitalTraderDesc>
+  
   
   
 </LanguageData>
