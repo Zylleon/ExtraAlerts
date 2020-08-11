@@ -40,6 +40,8 @@
   <AlertAsceticBedroomQuality>Ascetic has nice room</AlertAsceticBedroomQuality>
   <AlertAsceticBedroomQualityDesc>An ascetic colonist is unhappy that their bedroom is too nice. Consider removing ameneties or assigning them to a worse bedroom.</AlertAsceticBedroomQualityDesc>
   
+  <AlertNightOwl>Night owl in daytime</AlertNightOwl>
+  <AlertNightOwlDesc>A night owl is scheduled for day shift, put them on night shift</AlertNightOwlDesc>
   
 <!-- Animals -->
   <ExtraAlerts_Animals>Animals</ExtraAlerts_Animals>
@@ -53,6 +55,8 @@
   <AlertAnimalGoingWild>Animal losing tameness</AlertAnimalGoingWild>
   <AlertAnimalGoingWildDesc>These colony animals will be wild soon.</AlertAnimalGoingWildDesc>
   
+  <AlertHandlerNeeded>Handler needed</AlertHandlerNeeded>
+  <AlertHandlerNeededDesc>Some of your animals are not trainable by any of your colonists. Consider slaughtering or selling them before they return to the wild.</AlertHandlerNeededDesc>
   
 <!-- Misc -->
   <ExtraAlerts_Misc>Other</ExtraAlerts_Misc>
@@ -69,6 +73,10 @@
   <AlertOrbitalTrader>Orbital trader</AlertOrbitalTrader>
   <AlertOrbitalTraderDesc>An orbitral trader is in range</AlertOrbitalTraderDesc>
   
+  <AlertEnemiesOnMap>Enemies</AlertEnemiesOnMap>
+  <AlertEnemiesOnMapDesc>There are enemies here, stay safe.</AlertEnemiesOnMapDesc>
   
+  <AlertColonistNeedsRest>Colonist needs rest</AlertColonistNeedsRest>
+  <AlertColonistNeedsRestDesc>These colonists are sick and need bed rest</AlertColonistNeedsRestDesc>
   
 </LanguageData>
