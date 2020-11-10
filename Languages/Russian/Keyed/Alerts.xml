@@ -2,35 +2,68 @@
 <LanguageData>
 
   <ExtraAlerts_ModName>Extra Alerts</ExtraAlerts_ModName>
+  
+<!-- Urgent -->
+  <ExtraAlerts_Urgent>Неотложное</ExtraAlerts_Urgent>
+  
+  <AlertEnemyNeedsRescue>Враг недееспособен</AlertEnemyNeedsRescue>
+  <AlertEnemyNeedsRescueDesc>Враг недееспособен. Вы можете захватить его, раздеть или прикончить.</AlertEnemyNeedsRescueDesc>
+  
+  <AlertAllyNeedsRescue>Союзник недееспособен</AlertAllyNeedsRescue>
+  <AlertAllyNeedsRescueDesc>Союзник недееспособен. Возможно, вы захотите его спасти.</AlertAllyNeedsRescueDesc>
+  
+  <AlertNeutralNeedsRescue>Незнакомец недееспособен</AlertNeutralNeedsRescue>
+  <AlertNeutralNeedsRescueDesc>Незнакомец недееспособен. Возможно, вы захотите спасти или захватить его.</AlertNeutralNeedsRescueDesc>
+
+  <AlertBlight>Порча</AlertBlight>
+  <AlertBlightDesc>Эти растения поражены! Срежьте их, прежде чем порча распространится.</AlertBlightDesc>
+  
+<!-- Mood -->
+  <ExtraAlerts_Mood>Настроение</ExtraAlerts_Mood>
 
   <AlertNotBondedAnimalMaster>Привязанность</AlertNotBondedAnimalMaster>
-  <AlertNotBondedAnimalMasterDesc>Животное не назначено своему связанному хозяину.</AlertNotBondedAnimalMasterDesc>
+  <AlertNotBondedAnimalMasterDesc>Привязанное животное не назначено своему хозяину.</AlertNotBondedAnimalMasterDesc>
 
   <AlertDeadMansApparel>Испорченная одежда</AlertDeadMansApparel>
-  <AlertDeadMansApparelDesc>Эти колонисты носят одежду из трупа, что их очень огорчает:\n\n{0}\nДайте им чистую одежду.</AlertDeadMansApparelDesc>
+  <AlertDeadMansApparelDesc>Эти колонисты носят одежду с трупа, что их очень огорчает:\n\n{0}\nДайте им новую одежду.</AlertDeadMansApparelDesc>
+
+  <AlertHumanLeatherApparelSad>Одежда из человеческой кожи</AlertHumanLeatherApparelSad>
+  <AlertHumanLeatherApparelSadDesc>Эти колонисты одеты в одежду из человеческой кожи, что их беспокоит. Дайте им одежду, сделанную из другого материала.</AlertHumanLeatherApparelSadDesc>
   
-  <AlertWantToSleepWith>Влюбленные разлучены</AlertWantToSleepWith>
+  <AlertWantToSleepWith>Влюблённые разлучены</AlertWantToSleepWith>
   <AlertWantToSleepWithDesc>Эти колонисты хотят спать вместе. Подумайте о том, чтобы назначить им двуспальную кровать.</AlertWantToSleepWithDesc>
   
   <AlertSharingBedUnhappy>Несчастные делят постель</AlertSharingBedUnhappy>
   <AlertSharingBedUnhappyDesc>Эти колонисты делят постель, но не являются любовниками. Подумайте о том, чтобы выделить им отдельные кровати.</AlertSharingBedUnhappyDesc>
   
-  <AlertPausedCaravan>Караван в режиме ожидания</AlertPausedCaravan>
-  <AlertPausedCaravanDesc>Один из ваших караванов остановился и, возможно, ждет указаний.</AlertPausedCaravanDesc>
-  
   <AlertAsceticBedroomQuality>У аскета хорошая комната</AlertAsceticBedroomQuality>
   <AlertAsceticBedroomQualityDesc>Аскетичный колонист недоволен тем, что его спальня слишком хороша. Подумайте о том, чтобы убрать удобства или назначить их в худшую спальню.</AlertAsceticBedroomQualityDesc>
+																										    
+<!-- Animals -->
+  <ExtraAlerts_Animals>Животные</ExtraAlerts_Animals>
   
-  <AlertHumanLeatherApparelSad>Одежда из человеческой кожи</AlertHumanLeatherApparelSad>
-  <AlertHumanLeatherApparelSadDesc>Эти колонисты одеты в одежду из человеческой кожи, которая их беспокоит. Дайте им одежду из чего-нибудь другого.</AlertHumanLeatherApparelSadDesc>
+  <AlertAnimalHypothermia>Гипотермия у животных</AlertAnimalHypothermia>
+  <AlertAnimalHypothermiaDesc>У этих животных гипотермия.</AlertAnimalHypothermiaDesc>
+    
+  <AlertAnimalHeatstroke>Тепловой удар у животных</AlertAnimalHeatstroke>
+  <AlertAnimalHeatstrokeDesc>У этих животных тепловой удар.</AlertAnimalHeatstrokeDesc>
   
-  <AlertEnemyNeedsRescue>Враг нуждается в спасении</AlertEnemyNeedsRescue>
-  <AlertEnemyNeedsRescueDesc>Враг недееспособен. Вы можете захватить его, раздеть или прикончить.</AlertEnemyNeedsRescueDesc>
+  <AlertAnimalGoingWild>Животное утрачивает прирученность</AlertAnimalGoingWild>
+  <AlertAnimalGoingWildDesc>Эти животные скоро станут дикими.</AlertAnimalGoingWildDesc>
   
-  <AlertAllyNeedsRescue>Союзник нуждается в спасении</AlertAllyNeedsRescue>
-  <AlertAllyNeedsRescueDesc>Союзник недееспособен. Возможно, вы захотите его спасти.</AlertAllyNeedsRescueDesc>
+<!-- Misc -->
+  <ExtraAlerts_Misc>Разное</ExtraAlerts_Misc>
   
-  <AlertNeutralNeedsRescue>Незнакомец нуждается в спасении</AlertNeutralNeedsRescue>
-  <AlertNeutralNeedsRescueDesc>Незнакомец недееспособен. Возможно, вы захотите спасти или захватить его.</AlertNeutralNeedsRescueDesc>
+  <AlertPausedCaravan>Караван в режиме ожидания</AlertPausedCaravan>
+  <AlertPausedCaravanDesc>Один из ваших караванов остановился и, возможно, ждёт указаний.</AlertPausedCaravanDesc>
+  
+  <AlertUnroofedElectrical>Электрооборудование без крыши</AlertUnroofedElectrical>
+  <AlertUnroofedElectricalDesc>Эти постройки не имеют крыши и могут закоротить во время дождя.</AlertUnroofedElectricalDesc>
+  
+  <AlertTradeCaravan>Торговец</AlertTradeCaravan>
+  <AlertTradeCaravanDesc>Торговец посещает ваше поселение</AlertTradeCaravanDesc>
+  
+  <AlertOrbitalTrader>Орбитальный торговец</AlertOrbitalTrader>
+  <AlertOrbitalTraderDesc>Орбитальный торговец находится в зоне досягаемости ваших радаров</AlertOrbitalTraderDesc>
   
 </LanguageData>
