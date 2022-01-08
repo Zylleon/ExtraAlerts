@@ -40,6 +40,9 @@
   <AlertAsceticBedroomQuality>禁欲者に良い部屋</AlertAsceticBedroomQuality>
   <AlertAsceticBedroomQualityDesc>禁欲の特徴を持つ入植者は自分の寝室があまりにも豪華な事に不満を抱いています。美しさを取り除くか、より評価が悪い寝室へ割り当てることを検討してください。</AlertAsceticBedroomQualityDesc>
 
+  <AlertNightOwl>陽の下のよたか</AlertNightOwl>
+  <AlertNightOwlDesc>よたかの人が昼間働く事になっています、夜勤にしてください。</AlertNightOwlDesc>
+
 
   <!-- Animals -->
   <ExtraAlerts_Animals>動物</ExtraAlerts_Animals>
@@ -53,6 +56,8 @@
   <AlertAnimalGoingWild>動物が飼いならし不足</AlertAnimalGoingWild>
   <AlertAnimalGoingWildDesc>これらのコロニーの動物たちはすぐに野生化します。</AlertAnimalGoingWildDesc>
 
+  <AlertHandlerNeeded>調教師が必要</AlertHandlerNeeded>
+  <AlertHandlerNeededDesc>入植者が調教の訓練をできない動物がいます。野生に戻る前に屠殺するか売却を検討してください。</AlertHandlerNeededDesc>
 
   <!-- Misc -->
   <ExtraAlerts_Misc>その他</ExtraAlerts_Misc>
@@ -68,5 +73,11 @@
 
   <AlertOrbitalTrader>軌道トレーダー</AlertOrbitalTrader>
   <AlertOrbitalTraderDesc>通信可能な軌道上に宇宙トレーダーが来訪中です。</AlertOrbitalTraderDesc>
+
+  <AlertEnemiesOnMap>敵対者がいる</AlertEnemiesOnMap>
+  <AlertEnemiesOnMapDesc>敵がいるから安全な場所に避難しましょう。</AlertEnemiesOnMapDesc>
+
+  <AlertColonistNeedsRest>入植者は休養が必要</AlertColonistNeedsRest>
+  <AlertColonistNeedsRestDesc>この入植者たちは病気なので、ベッドでの休養が必要です。</AlertColonistNeedsRestDesc>
 
 </LanguageData>
