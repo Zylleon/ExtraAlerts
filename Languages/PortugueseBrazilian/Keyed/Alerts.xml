@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <ExtraAlerts_ModName>Extra Alerts</ExtraAlerts_ModName>
+  
+<!-- Urgent -->
+  <ExtraAlerts_Urgent>Urgente</ExtraAlerts_Urgent>
+  
+  <AlertEnemyNeedsRescue>Inimigo caído</AlertEnemyNeedsRescue>
+  <AlertEnemyNeedsRescueDesc>Um inimigo está incapacitado. Você pode capturar ele, tirar suas roupas, ou executá-lo.</AlertEnemyNeedsRescueDesc>
+  
+  <AlertAllyNeedsRescue>Aliado caído</AlertAllyNeedsRescue>
+  <AlertAllyNeedsRescueDesc>Um aliado está incapacitado. Você pode querer resgatá-lo.</AlertAllyNeedsRescueDesc>
+  
+  <AlertNeutralNeedsRescue>Humanoide caído</AlertNeutralNeedsRescue>
+  <AlertNeutralNeedsRescueDesc>Um humanoide de relação neutra está incapacitado. Você pode querer resgatá-lo ou capturá-lo.</AlertNeutralNeedsRescueDesc>
+  
+  <AlertBlight>Praga</AlertBlight>
+  <AlertBlightDesc>Estas plantas estão com pragas! Corte elas antes que a praga espalhe.</AlertBlightDesc>
+  
+  
+<!-- Mood -->
+  <ExtraAlerts_Mood>Humor</ExtraAlerts_Mood>
+
+  <AlertNotBondedAnimalMaster>Animal sem mestre</AlertNotBondedAnimalMaster>
+  <AlertNotBondedAnimalMasterDesc>Um animal não está designado para seu mestre.</AlertNotBondedAnimalMasterDesc>
+  
+  <AlertDeadMansApparel>Roupas de defunto</AlertDeadMansApparel>
+  <AlertDeadMansApparelDesc>Estes colonos estão vestindo roupas que alguém morreu usando, que está deixando eles chateados:\n\n{0}\nConsiga roupas limpas para eles.</AlertDeadMansApparelDesc>
+  
+  <AlertHumanLeatherApparelSad>Perturbado por pele humana</AlertHumanLeatherApparelSad>
+  <AlertHumanLeatherApparelSadDesc>Estes colonos estão vestindo roupas de pele humana, o que eles acham perturbador. Consiga roupas feitas de outra coisa para eles.</AlertHumanLeatherApparelSadDesc>
+
+  <AlertWantToSleepWith>Amantes Separados</AlertWantToSleepWith>
+  <AlertWantToSleepWithDesc>Estes colonos querem dormir juntos. Considere designar uma cama de casal para eles.</AlertWantToSleepWithDesc>
+  
+  <AlertSharingBedUnhappy>Compartilhando a cama</AlertSharingBedUnhappy>
+  <AlertSharingBedUnhappyDesc>Estes colonos estão compartilhando uma cama, mas não são amantes. Considere designar camas separadas para eles.</AlertSharingBedUnhappyDesc>
+  
+  <AlertAsceticBedroomQuality>Ascético c/ bom quarto</AlertAsceticBedroomQuality>
+  <AlertAsceticBedroomQualityDesc>Um colono ascético está chateado pois seu quarto é bom demais. Considere remover facilidades do quarto ou designá-lo para um quarto pior.</AlertAsceticBedroomQualityDesc>
+  
+  <AlertNightOwl>Noturno acordado de dia</AlertNightOwl>
+  <AlertNightOwlDesc>Um colono noturno está agendado para o turno diurno. Mude seu turno para o noturno.</AlertNightOwlDesc>
+  
+<!-- Animals -->
+  <ExtraAlerts_Animals>Animais</ExtraAlerts_Animals>
+  
+  <AlertAnimalHypothermia>Hipotermia animal</AlertAnimalHypothermia>
+  <AlertAnimalHypothermiaDesc>Estes animais estão com hipotermia.</AlertAnimalHypothermiaDesc>
+    
+  <AlertAnimalHeatstroke>Insolação animal</AlertAnimalHeatstroke>
+  <AlertAnimalHeatstrokeDesc>Estes animais estão com insolação.</AlertAnimalHeatstrokeDesc>
+  
+  <AlertAnimalGoingWild>Animal perdendo domesticação</AlertAnimalGoingWild>
+  <AlertAnimalGoingWildDesc>Estes animais ficarão selvagens logo.</AlertAnimalGoingWildDesc>
+  
+  <AlertHandlerNeeded>Precisa-se de treinador</AlertHandlerNeeded>
+  <AlertHandlerNeededDesc>Alguns de seus animais não são treináveis por nenhum colono. Considere abatê-los ou vendê-los antes que eles voltem para a natureza.</AlertHandlerNeededDesc>
+  
+<!-- Misc -->
+  <ExtraAlerts_Misc>Outros</ExtraAlerts_Misc>
+  
+  <AlertPausedCaravan>Caravana esperando</AlertPausedCaravan>
+  <AlertPausedCaravanDesc>Uma de suas caravanas estão paradas e podem estar esperando por instruções.</AlertPausedCaravanDesc>
+
+  <AlertUnroofedElectrical>Elétricos sem teto</AlertUnroofedElectrical>
+  <AlertUnroofedElectricalDesc>Estas construções estão sem teto e vão entrar em curto circuito na chuva.</AlertUnroofedElectricalDesc>
+  
+  <AlertTradeCaravan>Comerciantes</AlertTradeCaravan>
+  <AlertTradeCaravanDesc>Um comerciante está visitando</AlertTradeCaravanDesc>
+  
+  <AlertOrbitalTrader>Comerciante orbital</AlertOrbitalTrader>
+  <AlertOrbitalTraderDesc>Um comerciante orbital está ao alcance</AlertOrbitalTraderDesc>
+  
+  <AlertEnemiesOnMap>Inimigos</AlertEnemiesOnMap>
+  <AlertEnemiesOnMapDesc>Há inimigos aqui, fique seguro.</AlertEnemiesOnMapDesc>
+  
+  <AlertColonistNeedsRest>Colono precisa de descanso</AlertColonistNeedsRest>
+  <AlertColonistNeedsRestDesc>Estes colonos estão doentes e precisam descansar em uma cama</AlertColonistNeedsRestDesc>
+  
+</LanguageData>
