@@ -68,15 +68,15 @@
   <AlertUnroofedElectricalDesc>These buildings are unroofed and will short circuit in rain.</AlertUnroofedElectricalDesc>
   
   <AlertTradeCaravan>Trader</AlertTradeCaravan>
-  <AlertTradeCaravanDesc>A trader is visiting</AlertTradeCaravanDesc>
+  <AlertTradeCaravanDesc>A trader is visiting.</AlertTradeCaravanDesc>
   
   <AlertOrbitalTrader>Orbital trader</AlertOrbitalTrader>
-  <AlertOrbitalTraderDesc>An orbital trader is in range</AlertOrbitalTraderDesc>
+  <AlertOrbitalTraderDesc>An orbital trader is in range.</AlertOrbitalTraderDesc>
   
   <AlertEnemiesOnMap>Enemies</AlertEnemiesOnMap>
   <AlertEnemiesOnMapDesc>There are enemies here, stay safe.</AlertEnemiesOnMapDesc>
   
   <AlertColonistNeedsRest>Colonist needs rest</AlertColonistNeedsRest>
-  <AlertColonistNeedsRestDesc>These colonists are sick and need bed rest</AlertColonistNeedsRestDesc>
+  <AlertColonistNeedsRestDesc>These colonists are sick and need bed rest.</AlertColonistNeedsRestDesc>
   
 </LanguageData>

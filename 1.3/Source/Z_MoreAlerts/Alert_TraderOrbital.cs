@@ -20,18 +20,24 @@ namespace Z_MoreAlerts
                 {
                     if (maps[i].passingShipManager.passingShips.Count > 0)
                     {
-                        List<Building> allBuildingsColonist = maps[i].listerBuildings.allBuildingsColonist;
+                        return true;
+                        //Log.Message("extra alerts - trade ship found");
+                        //List<Building> allBuildingsColonist = maps[i].listerBuildings.allBuildingsColonist;
+                        //return true;
 
-                        for (int j = 0; j < allBuildingsColonist.Count; j++)
-                        {
-                            if (allBuildingsColonist[i].def == ThingDefOf.CommsConsole)
-                            {
-                                return true;
-                            }
-                        }
-                        //return true; 
+                        //for (int j = 0; j < allBuildingsColonist.Count; j++)
+                        //{
+                        //    Log.Message("building found: " + allBuildingsColonist[i].def.defName);
+                        //    if (allBuildingsColonist[i].def.defName == "CommsConsole")
+                        //    {
+                        //        return true;
+                        //    }
+                        //}
+                        //return false; 
                     
                     }
+                    //return false;
+                    
                 }
                 return false;
             }
