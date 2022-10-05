@@ -19,7 +19,17 @@ namespace Z_MoreAlerts
                 for (int i = 0; i < maps.Count; i++)
                 {
                     if (maps[i].passingShipManager.passingShips.Count > 0)
-                    { return true; }
+                    {
+                        List<Building> allBuildingsColonist = maps[i].listerBuildings.allBuildingsColonist;
+                        
+                        if (allBuildingsColonist.Any(b => b.def.defName == "CommsConsole"))
+                        {
+                            return true;
+                        }
+
+
+                    }
+                    
                 }
                 return false;
             }

@@ -20,14 +20,17 @@ namespace Z_MoreAlerts
                 {
                     List<Thing> plants = maps[i].listerThings.ThingsInGroup(ThingRequestGroup.HarvestablePlant);
                     //Log.Message("Plants found: " + plants.Count);
-
-                    foreach (Thing p in plants)
+                    if (!plants.NullOrEmpty())
                     {
-                        if ((p as Plant).Blight != null)
+                        foreach (Thing p in plants)
                         {
-                            yield return p;
+                            if ((p as Plant)?.Blight != null)
+                            {
+                                yield return p;
+                            }
                         }
                     }
+                    
                 }
             }
         }
