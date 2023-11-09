@@ -7,6 +7,7 @@ namespace Z_MoreAlerts
     public class ExtraAlertSettings : ModSettings
     {
         // Urgent
+        public static bool cb_enemies = true;
         public static bool cb_enemyRescue = true;
         public static bool cb_allyRescue = true;
         public static bool cb_neutralRescue = true;
@@ -33,6 +34,7 @@ namespace Z_MoreAlerts
         public override void ExposeData()
         {
             // Urgent
+            Scribe_Values.Look(ref cb_enemies, "cb_enemies", true);
             Scribe_Values.Look(ref cb_enemyRescue, "cb_enemyRescue", true);
             Scribe_Values.Look(ref cb_allyRescue, "cb_allyRescue", true);
             Scribe_Values.Look(ref cb_neutralRescue, "cb_neutralRescue", true);
@@ -78,6 +80,7 @@ namespace Z_MoreAlerts
             Text.Font = GameFont.Medium;
             listing.Label("ExtraAlerts_Urgent".Translate());
             Text.Font = GameFont.Small;
+            listing.CheckboxLabeled("AlertEnemies".Translate(), ref ExtraAlertSettings.cb_enemies, "AlertEnemiesDesc".Translate());
             listing.CheckboxLabeled("AlertEnemyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_enemyRescue, "AlertEnemyNeedsRescueDesc".Translate());
             listing.CheckboxLabeled("AlertAllyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_allyRescue, "AlertAllyNeedsRescueDesc".Translate());
             listing.CheckboxLabeled("AlertNeutralNeedsRescue".Translate(), ref ExtraAlertSettings.cb_neutralRescue, "AlertNeutralNeedsRescueDesc".Translate());

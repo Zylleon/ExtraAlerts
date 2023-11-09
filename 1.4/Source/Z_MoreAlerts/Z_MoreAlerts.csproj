@@ -96,6 +96,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert_EnemiesOnMap.cs" />
     <Compile Include="Alert_AnimalHeatstroke.cs" />
     <Compile Include="Alert_AnimalHypothermia.cs" />
     <Compile Include="Alert_AsceticBedroomQuality.cs" />

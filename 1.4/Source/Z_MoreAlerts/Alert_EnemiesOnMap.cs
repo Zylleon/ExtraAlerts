@@ -8,20 +8,17 @@ using UnityEngine;
 
 namespace Z_MoreAlerts
 {
-    public class Alert_AllyNeedsRescue : Alert_SemiCritical
+    public class Alert_EnemiesOnMap : Alert_Critical
     {
-        private IEnumerable<Pawn> AlliesNeedingRescue
+        private IEnumerable<Pawn> Enemies
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.Humanlike && p.Faction != null && p.Faction != Faction.OfPlayer).ToList())
+                foreach (Pawn p in PawnsFinder.AllMaps_Spawned)
                 {
-                    if (!p.IsPrisoner && p.Faction.AllyOrNeutralTo(Faction.OfPlayer))
+                    if (p.HostileTo(Faction.OfPlayer) && !p.Downed)
                     {
-                        if (Alert_EnemiesOnMap.NeedsRescue(p))
-                        {
-                            yield return p;
-                        }
+                        yield return p;
                     }
                 }
             }
@@ -34,26 +31,26 @@ namespace Z_MoreAlerts
 
         public override string GetLabel()
         {
-            return "AlertAllyNeedsRescue".Translate();
+            return "AlertEnemies".Translate();
         }
 
         public override TaggedString GetExplanation()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in this.AlliesNeedingRescue)
+            foreach (Pawn current in this.Enemies)
             {
                 stringBuilder.AppendLine("    " + current.LabelShort);
             }
-            return string.Format("AlertAllyNeedsRescueDesc".Translate(), stringBuilder.ToString());
+            return string.Format("AlertEnemiesDesc".Translate(), this.Enemies.Count(), stringBuilder.ToString());
         }
 
         public override AlertReport GetReport()
         {
-            if (!ExtraAlertSettings.cb_allyRescue)
+            if (!ExtraAlertSettings.cb_enemies)
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.AlliesNeedingRescue.ToList());
+            return AlertReport.CulpritsAre(this.Enemies.ToList());
         }
     }
 }
