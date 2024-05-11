@@ -18,7 +18,11 @@ namespace Z_MoreAlerts
                 {
                     if (p.HostileTo(Faction.OfPlayer) && !p.Downed)
                     {
-                        yield return p;
+                        if(!p.Fogged())
+                        {
+                            yield return p;
+
+                        }
                     }
                 }
             }
