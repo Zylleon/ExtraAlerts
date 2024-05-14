@@ -9,6 +9,10 @@
   <AlertEnemies>Enemies</AlertEnemies>
   <AlertEnemiesDesc>There are {0} enemies active on the map:\n\n{1}</AlertEnemiesDesc>
   
+  <AlertHiddenEnemies>Hidden enemies</AlertHiddenEnemies>
+  <AlertHiddenEnemiesDesc>There are {0} enemies hiding on the map:\n\n{1}</AlertHiddenEnemiesDesc>
+  <AlertHiddenEnemiesLabel>Show hidden enemies. Includes enemies in fogged areas, as well as invisible sightstealers.</AlertHiddenEnemiesLabel>
+  
   <AlertEnemyNeedsRescue>Enemy downed</AlertEnemyNeedsRescue>
   <AlertEnemyNeedsRescueDesc>These enemies are incapacitated. You can capture them, strip them, or finish them off:\n\n{0}</AlertEnemyNeedsRescueDesc>
   

@@ -8,6 +8,7 @@ namespace Z_MoreAlerts
     {
         // Urgent
         public static bool cb_enemies = true;
+        public static bool cb_hiddenEnemies = true;
         public static bool cb_enemyRescue = true;
         public static bool cb_allyRescue = true;
         public static bool cb_neutralRescue = true;
@@ -35,6 +36,7 @@ namespace Z_MoreAlerts
         {
             // Urgent
             Scribe_Values.Look(ref cb_enemies, "cb_enemies", true);
+            Scribe_Values.Look(ref cb_hiddenEnemies, "cb_hiddenEnemies", false);
             Scribe_Values.Look(ref cb_enemyRescue, "cb_enemyRescue", true);
             Scribe_Values.Look(ref cb_allyRescue, "cb_allyRescue", true);
             Scribe_Values.Look(ref cb_neutralRescue, "cb_neutralRescue", true);
@@ -81,6 +83,14 @@ namespace Z_MoreAlerts
             listing.Label("ExtraAlerts_Urgent".Translate());
             Text.Font = GameFont.Small;
             listing.CheckboxLabeled("AlertEnemies".Translate(), ref ExtraAlertSettings.cb_enemies, "AlertEnemiesDesc".Translate());
+
+            if(!ExtraAlertSettings.cb_enemies)
+            {
+                GUI.color = Color.gray;
+            }
+            listing.CheckboxLabeled("AlertHiddenEnemies".Translate(), ref ExtraAlertSettings.cb_hiddenEnemies, "AlertHiddenEnemiesLabel".Translate());
+            GUI.color = Color.white;
+
             listing.CheckboxLabeled("AlertEnemyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_enemyRescue, "AlertEnemyNeedsRescueDesc".Translate());
             listing.CheckboxLabeled("AlertAllyNeedsRescue".Translate(), ref ExtraAlertSettings.cb_allyRescue, "AlertAllyNeedsRescueDesc".Translate());
             listing.CheckboxLabeled("AlertNeutralNeedsRescue".Translate(), ref ExtraAlertSettings.cb_neutralRescue, "AlertNeutralNeedsRescueDesc".Translate());
