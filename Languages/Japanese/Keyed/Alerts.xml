@@ -9,6 +9,10 @@
   <AlertEnemies>敵対者がいる</AlertEnemies>
   <AlertEnemiesDesc>活動中の敵をマップ内に{0}体確認しました：\n\n{1}</AlertEnemiesDesc>
 
+  <AlertHiddenEnemies>隠れた敵がいる</AlertHiddenEnemies>
+  <AlertHiddenEnemiesDesc>マップ上に{0}名の敵が隠れています:\n\n{1}</AlertHiddenEnemiesDesc>
+  <AlertHiddenEnemiesLabel>隠れた敵を表示します.戦場の霧がかかった地域にいる敵や,透明化しているサイトスティーラーも含まれます.</AlertHiddenEnemiesLabel>
+
   <AlertEnemyNeedsRescue>救助が必要な敵</AlertEnemyNeedsRescue>
   <AlertEnemyNeedsRescueDesc>無力化された敵です。囚人にしたり、衣服を脱がせたり、トドメを刺したりできます:\n\n{0}</AlertEnemyNeedsRescueDesc>
 
