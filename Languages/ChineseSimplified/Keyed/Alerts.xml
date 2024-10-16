@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <ExtraAlerts_ModName>更多警告</ExtraAlerts_ModName>
+  
+<!-- Urgent -->
+  <ExtraAlerts_Urgent>紧急</ExtraAlerts_Urgent>
+
+  <AlertEnemies>敌对敌人</AlertEnemies>
+  <AlertEnemiesDesc>在地图中发现了{0}名敌人。\n\n 请考虑让你的殖民者躲避他们，或者将他们清除掉。</AlertEnemiesDesc>
+
+  <AlertHiddenEnemies>隐蔽的敌人</AlertHiddenEnemies>
+  <AlertHiddenEnemiesDesc>地图上有{0}名隐藏中的敌人:\n\n{1}</AlertHiddenEnemiesDesc>
+  <AlertHiddenEnemiesLabel>显示隐藏中的敌人，包括战争迷雾中，以及有隐形等手段透明化的敌人。</AlertHiddenEnemiesLabel>
+
+  <AlertEnemyNeedsRescue>敌人倒地</AlertEnemyNeedsRescue>
+  <AlertEnemyNeedsRescueDesc>这些都是被击败可"腐乳"的敌人。 你可以让他们成为囚犯、脱掉他们的衣服或 者处决他们：\n\n{0}</AlertEnemyNeedsRescueDesc>
+  
+  <AlertAllyNeedsRescue>盟友倒地</AlertAllyNeedsRescue>
+  <AlertAllyNeedsRescueDesc>一个盟友失去了行动能力。你可以放任不管或考虑去救援他们：\n\n{0}</AlertAllyNeedsRescueDesc>
+  
+  <AlertNeutralNeedsRescue>倒地无派别人员</AlertNeutralNeedsRescue>
+  <AlertNeutralNeedsRescueDesc>这些人是无派别的没有行动能力者。 你可以考虑救援或捕获他们：\n\n{0}</AlertNeutralNeedsRescueDesc>
+  
+  <AlertBlight>枯萎病</AlertBlight>
+  <AlertBlightDesc>这些植物已经枯萎了! 在它蔓延之前砍掉它们。</AlertBlightDesc>
+  
+  
+<!-- Mood -->
+  <ExtraAlerts_Mood>心情</ExtraAlerts_Mood>
+
+  <AlertNotBondedAnimalMaster>羁绊的动物</AlertNotBondedAnimalMaster>
+  <AlertNotBondedAnimalMasterDesc>动物并没有被分配给其羁绊的定居者。</AlertNotBondedAnimalMasterDesc>
+  
+  <AlertDeadMansApparel>死者衣服</AlertDeadMansApparel>
+  <AlertDeadMansApparelDesc>这些定居者穿的是死人的衣服，他们的心情会下降。：\n\n{0}\n请给他们穿上干净的衣服。</AlertDeadMansApparelDesc>
+  
+  <AlertHumanLeatherApparelSad>人皮衣服</AlertHumanLeatherApparelSad>
+  <AlertHumanLeatherApparelSadDesc>这些殖民者穿着人类皮革服装，他们觉得很不安：\n\n{0}\n可以尝试他们穿上其他材质的衣服。</AlertHumanLeatherApparelSadDesc>
+
+  <AlertWantToSleepWith>异地恋恋人</AlertWantToSleepWith>
+  <AlertWantToSleepWithDesc>这些定居者想和她的恋人在一起。请考虑给他们分配一套住房（双人床）吧。\n\n除了出轨者\n他这个骗子!</AlertWantToSleepWithDesc>
+  
+  <AlertSharingBedUnhappy>共用床铺</AlertSharingBedUnhappy>
+  <AlertSharingBedUnhappyDesc>这些殖民者不是恋人关系，但是他们共用一张床。 请考虑将他们分配到不同的床上。</AlertSharingBedUnhappyDesc>
+  
+  <AlertAsceticBedroomQuality>奢华房间的苦行者</AlertAsceticBedroomQuality>
+  <AlertAsceticBedroomQualityDesc>具有禁欲主义的定居者抱怨他们的卧室太过豪华。考虑去掉装饰或将其分配到一个更合适的房间。</AlertAsceticBedroomQualityDesc>
+  
+  <AlertNightOwl>白天的夜猫子</AlertNightOwl>
+  <AlertNightOwlDesc>一只夜猫子被他妈妈安排在白班多痛苦!让他们上夜班吧!</AlertNightOwlDesc>
+  
+<!-- 动物 -->
+  <ExtraAlerts_Animals>动物</ExtraAlerts_Animals>
+  
+  <AlertAnimalHypothermia>体温过低动物</AlertAnimalHypothermia>
+  <AlertAnimalHypothermiaDesc>定居地的这些动物正在遭受低温症的影响。</AlertAnimalHypothermiaDesc>
+    
+  <AlertAnimalHeatstroke>中暑动物</AlertAnimalHeatstroke>
+  <AlertAnimalHeatstrokeDesc>定居地的这些动物正在遭受中暑的影响。</AlertAnimalHeatstrokeDesc>
+  
+  <AlertAnimalGoingWild>缺乏训话</AlertAnimalGoingWild>
+  <AlertAnimalGoingWildDesc>定居地的这些动物即将变成野生动物。</AlertAnimalGoingWildDesc>
+  
+  <AlertHandlerNeeded>需要适当处理</AlertHandlerNeeded>
+  <AlertHandlerNeededDesc>你的一些动物不能被任何殖民者训练。在它们回到野外之前，请考虑将它们宰杀或出售。</AlertHandlerNeededDesc>
+  
+<!-- 杂项 -->
+  <ExtraAlerts_Misc>其它</ExtraAlerts_Misc>
+  
+  <AlertPausedCaravan>暂停的远行队</AlertPausedCaravan>
+  <AlertPausedCaravanDesc>世界地图上有远行队停止了行进，正在等待你的指示。</AlertPausedCaravanDesc>
+
+  <AlertUnroofedElectrical>无屋顶的电器</AlertUnroofedElectrical>
+  <AlertUnroofedElectricalDesc>这些建筑物没有在屋顶，下雨时就会发生短路；崩！</AlertUnroofedElectricalDesc>
+  
+  <AlertTradeCaravan>贸易商</AlertTradeCaravan>
+  <AlertTradeCaravanDesc>贸易商经过你的居住地。</AlertTradeCaravanDesc>
+  
+  <AlertOrbitalTrader>轨道交易</AlertOrbitalTrader>
+  <AlertOrbitalTraderDesc>一个轨道交易商在范围内。</AlertOrbitalTraderDesc>
+  
+  <AlertColonistNeedsRest>殖民者需要休息</AlertColonistNeedsRest>
+  <AlertColonistNeedsRestDesc>这些殖民者生病了，需要卧床休息。</AlertColonistNeedsRestDesc>
+  
+</LanguageData>
