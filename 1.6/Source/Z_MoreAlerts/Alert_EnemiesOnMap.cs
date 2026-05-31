@@ -10,27 +10,24 @@ namespace Z_MoreAlerts
 {
     public class Alert_EnemiesOnMap : Alert_Critical
     {
-        private IEnumerable<Pawn> Enemies
+        private readonly List<Pawn> enemies = new List<Pawn>();
+
+        private List<Pawn> Enemies
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned)
-                {
-                    if (p.HostileTo(Faction.OfPlayer) && !p.Downed)
-                    {
-                        if(!Alert_HiddenEnemiesOnMap.IsHidden(p))
-                        {
-                            yield return p;
+                enemies.Clear();
 
-                        }
+                foreach (Pawn p in Utility.SpawnedEnemies)
+                {
+                    if (!p.Downed && !Alert_HiddenEnemiesOnMap.IsHidden(p))
+                    {
+                        enemies.Add(p);
                     }
                 }
-            }
-        }
 
-        public static bool NeedsRescue(Pawn p)
-        {
-            return p.Downed && !p.InBed() && !(p.ParentHolder is Pawn_CarryTracker) && (p.jobs.jobQueue == null || p.jobs.jobQueue.Count <= 0 || !p.jobs.jobQueue.Peek().job.CanBeginNow(p, false));
+                return enemies;
+            }
         }
 
         public override string GetLabel()
@@ -40,12 +37,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in this.Enemies)
-            {
-                stringBuilder.AppendLine("    " + current.LabelShort);
-            }
-            return string.Format("AlertEnemiesDesc".Translate(), this.Enemies.Count(), stringBuilder.ToString());
+            return string.Format("AlertEnemiesDesc".Translate(), this.enemies.Count, Utility.BuildPawnListText(this.enemies));
         }
 
         public override AlertReport GetReport()
@@ -54,7 +46,7 @@ namespace Z_MoreAlerts
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.Enemies.ToList());
+            return AlertReport.CulpritsAre(this.Enemies);
         }
     }
 }

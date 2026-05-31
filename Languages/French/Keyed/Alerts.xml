@@ -7,7 +7,7 @@
   <AlertNotBondedAnimalMasterDesc>Un animal lié n'est pas assigné à son maître.</AlertNotBondedAnimalMasterDesc>
 
   <AlertDeadMansApparel>Vêtements souillés</AlertDeadMansApparel>
-  <AlertDeadMansApparelDesc>Les colons suivants portent des vêtements ayant été portés par un cadavre, ce qui les rends tristes :\n\n{0}\n Donnez-leur des habits propres.</AlertDeadMansApparelDesc>
+  <AlertDeadMansApparelDesc>Les colons suivants portent des vêtements ayant été portés par un cadavre, ce qui les rends tristes :\n{0}\n\n Donnez-leur des habits propres.</AlertDeadMansApparelDesc>
   
   <AlertWantToSleepWith>Amants séparés</AlertWantToSleepWith>
   <AlertWantToSleepWithDesc>Ces colons veulent dormir ensemble. Envisagez de les assigner à un double-lit.</AlertWantToSleepWithDesc>

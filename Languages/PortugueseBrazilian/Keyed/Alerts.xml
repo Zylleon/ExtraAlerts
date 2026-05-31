@@ -26,7 +26,7 @@
   <AlertNotBondedAnimalMasterDesc>Um animal não está designado para seu mestre.</AlertNotBondedAnimalMasterDesc>
   
   <AlertDeadMansApparel>Roupas de defunto</AlertDeadMansApparel>
-  <AlertDeadMansApparelDesc>Estes colonos estão vestindo roupas que alguém morreu usando, que está deixando eles chateados:\n\n{0}\nConsiga roupas limpas para eles.</AlertDeadMansApparelDesc>
+  <AlertDeadMansApparelDesc>Estes colonos estão vestindo roupas que alguém morreu usando, que está deixando eles chateados:\n{0}\n\nConsiga roupas limpas para eles.</AlertDeadMansApparelDesc>
   
   <AlertHumanLeatherApparelSad>Perturbado por pele humana</AlertHumanLeatherApparelSad>
   <AlertHumanLeatherApparelSadDesc>Estes colonos estão vestindo roupas de pele humana, o que eles acham perturbador. Consiga roupas feitas de outra coisa para eles.</AlertHumanLeatherApparelSadDesc>

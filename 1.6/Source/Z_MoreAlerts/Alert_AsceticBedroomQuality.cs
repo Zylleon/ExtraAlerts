@@ -7,6 +7,8 @@ namespace Z_MoreAlerts
 {
     public class Alert_AsceticBedroomQuality : Alert
     {
+        private readonly List<Pawn> affectedPawns = new List<Pawn>();
+
         public Alert_AsceticBedroomQuality()
         {
             this.defaultLabel = "AlertAsceticBedroomQuality".Translate();
@@ -20,13 +22,15 @@ namespace Z_MoreAlerts
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.AffectedPawns().ToList());
+            return AlertReport.CulpritsAre(this.AffectedPawns());
         }
 
         private static List<Thought> tmpThoughts = new List<Thought>();
 
-        private IEnumerable<Pawn> AffectedPawns()
+        private List<Pawn> AffectedPawns()
         {
+            affectedPawns.Clear();
+
             foreach (Pawn p in PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_FreeColonists_NoCryptosleep)
             {
                 if (p.Dead)
@@ -43,9 +47,9 @@ namespace Z_MoreAlerts
                         {
                             if (Alert_AsceticBedroomQuality.tmpThoughts[i].def == requiredDef)
                             {
-                                if(tmpThoughts[i].CurStageIndex >= 5)
+                                if (tmpThoughts[i].CurStageIndex >= 5)
                                 {
-                                    yield return p;
+                                    affectedPawns.Add(p);
                                 }
                             }
                         }
@@ -57,6 +61,8 @@ namespace Z_MoreAlerts
                     }
                 }
             }
+
+            return affectedPawns;
         }
     }
 }

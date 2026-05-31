@@ -10,18 +10,23 @@ namespace Z_MoreAlerts
 {
     public class Alert_TraderOnMap : Alert
     {
+        private readonly List<Pawn> traders = new List<Pawn>();
 
-        private IEnumerable<Pawn> Traders
+        private List<Pawn> Traders
         {
             get
             {
+                traders.Clear();
+
                 foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.Humanlike))
                 {
                     if (p.trader != null && p.trader.CanTradeNow)
                     {
-                        yield return p;
+                        traders.Add(p);
                     }
                 }
+
+                return traders;
             }
         }
 
@@ -32,7 +37,7 @@ namespace Z_MoreAlerts
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.Traders.ToList());
+            return AlertReport.CulpritsAre(this.Traders);
         }
 
         public override string GetLabel()
