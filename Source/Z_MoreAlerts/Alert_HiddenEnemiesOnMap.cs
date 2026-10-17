@@ -10,22 +10,23 @@ namespace Z_MoreAlerts
 {
     public class Alert_HiddenEnemiesOnMap : Alert_Critical
     {
-        private IEnumerable<Pawn> Enemies
+        private readonly List<Pawn> enemies = new List<Pawn>();
+
+        private List<Pawn> Enemies
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned)
+                enemies.Clear();
+
+                foreach (Pawn p in Utility.SpawnedEnemies)
                 {
-                    if (p.HostileTo(Faction.OfPlayer) && !p.Downed)
+                    if (!p.Downed && IsHidden(p))
                     {
-                        if(IsHidden(p))
-                        {
-                            yield return p;
-
-                        }
-
+                        enemies.Add(p);
                     }
                 }
+
+                return enemies;
             }
         }
 
@@ -59,12 +60,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in this.Enemies)
-            {
-                stringBuilder.AppendLine("    " + current.LabelShort);
-            }
-            return string.Format("AlertHiddenEnemiesDesc".Translate(), this.Enemies.Count(), stringBuilder.ToString());
+            return string.Format("AlertHiddenEnemiesDesc".Translate(), this.enemies.Count, Utility.BuildPawnListText(this.enemies));
         }
 
         public override AlertReport GetReport()
@@ -73,7 +69,7 @@ namespace Z_MoreAlerts
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.Enemies.ToList());
+            return AlertReport.CulpritsAre(this.Enemies);
         }
     }
 }

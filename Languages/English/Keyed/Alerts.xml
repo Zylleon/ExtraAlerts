@@ -7,23 +7,23 @@
   <ExtraAlerts_Urgent>Urgent</ExtraAlerts_Urgent>
   
   <AlertEnemies>Enemies</AlertEnemies>
-  <AlertEnemiesDesc>There are {0} enemies active on the map:\n\n{1}</AlertEnemiesDesc>
+  <AlertEnemiesDesc>There are {0} enemies active on the map:\n{1}</AlertEnemiesDesc>
   
   <AlertHiddenEnemies>Hidden enemies</AlertHiddenEnemies>
-  <AlertHiddenEnemiesDesc>There are {0} enemies hiding on the map:\n\n{1}</AlertHiddenEnemiesDesc>
+  <AlertHiddenEnemiesDesc>There are {0} enemies hiding on the map:\n{1}</AlertHiddenEnemiesDesc>
   <AlertHiddenEnemiesLabel>Show hidden enemies. Includes enemies in fogged areas, as well as invisible sightstealers.</AlertHiddenEnemiesLabel>
   
   <AlertEnemyNeedsRescue>Enemy downed</AlertEnemyNeedsRescue>
-  <AlertEnemyNeedsRescueDesc>These enemies are incapacitated. You can capture them, strip them, or finish them off:\n\n{0}</AlertEnemyNeedsRescueDesc>
+  <AlertEnemyNeedsRescueDesc>These enemies are incapacitated. You can capture them, strip them, or finish them off:\n{0}</AlertEnemyNeedsRescueDesc>
   
   <AlertEntityDowned>Entity downed</AlertEntityDowned>
-  <AlertEntityDownedDesc>These anomalous entites are incapacitated. You can capture them or finish them off:\n\n{0}</AlertEntityDownedDesc>
+  <AlertEntityDownedDesc>These anomalous entites are incapacitated. You can capture them or finish them off:\n{0}</AlertEntityDownedDesc>
   
   <AlertAllyNeedsRescue>Ally downed</AlertAllyNeedsRescue>
-  <AlertAllyNeedsRescueDesc>These allies are incapacitated. You might want to rescue them:\n\n{0}</AlertAllyNeedsRescueDesc>
+  <AlertAllyNeedsRescueDesc>These allies are incapacitated. You might want to rescue them:\n{0}</AlertAllyNeedsRescueDesc>
   
   <AlertNeutralNeedsRescue>Humanoid downed</AlertNeutralNeedsRescue>
-  <AlertNeutralNeedsRescueDesc>These neutral people are incapacitated. You might want to rescue or capture them:\n\n{0}</AlertNeutralNeedsRescueDesc>
+  <AlertNeutralNeedsRescueDesc>These neutral people are incapacitated. You might want to rescue or capture them:\n{0}</AlertNeutralNeedsRescueDesc>
   
   <AlertBlight>Blight</AlertBlight>
   <AlertBlightDesc>These plants are blighted! Cut them before it spreads.</AlertBlightDesc>
@@ -36,10 +36,10 @@
   <AlertNotBondedAnimalMasterDesc>An animal is not assigned to its bonded master.</AlertNotBondedAnimalMasterDesc>
   
   <AlertDeadMansApparel>Tainted apparel</AlertDeadMansApparel>
-  <AlertDeadMansApparelDesc>These colonists are wearing apparel from a corpse, which is making them sad:\n\n{0}\nGet them some clean clothing.</AlertDeadMansApparelDesc>
+  <AlertDeadMansApparelDesc>These colonists are wearing apparel from a corpse, which is making them sad:\n{0}\n\nGet them some clean clothing.</AlertDeadMansApparelDesc>
   
   <AlertHumanLeatherApparelSad>Unhappy human leather</AlertHumanLeatherApparelSad>
-  <AlertHumanLeatherApparelSadDesc>These colonists are wearing human leather apparel, which they find disturbing:\n\n{0}\nGet them clothing made of something else.</AlertHumanLeatherApparelSadDesc>
+  <AlertHumanLeatherApparelSadDesc>These colonists are wearing human leather apparel, which they find disturbing:\n{0}\n\nGet them clothing made of something else.</AlertHumanLeatherApparelSadDesc>
 
   <AlertWantToSleepWith>Lovers separated</AlertWantToSleepWith>
   <AlertWantToSleepWithDesc>These colonists want to sleep together. Consider assigning them a double bed.</AlertWantToSleepWithDesc>
@@ -78,7 +78,7 @@
   <AlertUnroofedElectricalDesc>These buildings are unroofed and will short circuit in rain.</AlertUnroofedElectricalDesc>
   
   <AlertUnarmedCombatant>Combatant unarmed</AlertUnarmedCombatant>
-  <AlertUnarmedCombatantDesc>These colonists are combat-capable, but lack weapons:\n\n{0}</AlertUnarmedCombatantDesc>
+  <AlertUnarmedCombatantDesc>These colonists are combat-capable, but lack weapons:\n{0}</AlertUnarmedCombatantDesc>
   <AlertChildCombatant>Include child combatants</AlertChildCombatant>
   <AlertChildCombatantDesc>If enabled, this alert will include unarmed children.</AlertChildCombatantDesc>
   
@@ -95,7 +95,7 @@
  <ExtraAlerts_Odyssey>Odyssey</ExtraAlerts_Odyssey>
  
  <AlertPorcupineQuills>Porcupine quills</AlertPorcupineQuills>
- <AlertPorcupineQuillsDesc>These colonists have porcupine quills embedded in their skin. These are painful, and last until surgically removed:\n\n{0}</AlertPorcupineQuillsDesc>
+ <AlertPorcupineQuillsDesc>These colonists have porcupine quills embedded in their skin. These are painful, and last until surgically removed:\n{0}</AlertPorcupineQuillsDesc>
   
   
 </LanguageData>

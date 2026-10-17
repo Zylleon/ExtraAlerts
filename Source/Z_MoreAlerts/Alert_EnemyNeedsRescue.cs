@@ -9,17 +9,23 @@ namespace Z_MoreAlerts
 {
     public class Alert_EnemyNeedsRescue : Alert_SemiCritical
     {
-        private IEnumerable<Pawn> EnemiesNeedingRescue
+        private readonly List<Pawn> enemiesNeedingRescue = new List<Pawn>();
+
+        private List<Pawn> EnemiesNeedingRescue
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.Humanlike && p.HostileTo(Faction.OfPlayer)))
+                enemiesNeedingRescue.Clear();
+
+                foreach (Pawn p in Utility.SpawnedEnemies)
                 {
-                    if (Alert_EnemiesOnMap.NeedsRescue(p))
+                    if (Utility.NeedsRescue(p))
                     {
-                        yield return p;
+                        enemiesNeedingRescue.Add(p);
                     }
                 }
+
+                return enemiesNeedingRescue;
             }
         }
 
@@ -30,12 +36,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in this.EnemiesNeedingRescue)
-            {
-                stringBuilder.AppendLine("    " + current.LabelShort);
-            }
-            return string.Format("AlertEnemyNeedsRescueDesc".Translate(), stringBuilder.ToString());
+            return string.Format("AlertEnemyNeedsRescueDesc".Translate(), Utility.BuildPawnListText(this.enemiesNeedingRescue));
         }
 
         public override AlertReport GetReport()
@@ -44,7 +45,7 @@ namespace Z_MoreAlerts
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.EnemiesNeedingRescue.ToList());
+            return AlertReport.CulpritsAre(this.EnemiesNeedingRescue);
         }
     }
 }

@@ -10,12 +10,14 @@ namespace Z_MoreAlerts
 {
     public class Alert_UnroofedElectrical : Alert
     {
-        private HashSet<Building> UnroofedBuildings
+        private readonly List<Thing> unroofed = new List<Thing>();
+
+        private List<Thing> UnroofedBuildings
         {
             get
             {
-                HashSet<Building> buildings = new HashSet<Building>();
-                HashSet<Building> unroofed = new HashSet<Building>();
+                HashSet<Building> buildings;
+                unroofed.Clear();
                 List<Map> maps = Find.Maps;
                 for (int i = 0; i < maps.Count; i++)
                 {
@@ -41,11 +43,7 @@ namespace Z_MoreAlerts
                 return AlertReport.Inactive;
             }
 
-            List<Thing> culprits = new List<Thing>();
-            foreach(Building b in this.UnroofedBuildings)
-            {
-                culprits.Add((Thing)b);
-            }
+            List<Thing> culprits = this.UnroofedBuildings;
 
             return AlertReport.CulpritsAre(culprits);
         }

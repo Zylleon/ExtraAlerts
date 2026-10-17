@@ -25,7 +25,7 @@
   <AlertNotBondedAnimalMasterDesc>Привязанное животное не назначено своему хозяину.</AlertNotBondedAnimalMasterDesc>
 
   <AlertDeadMansApparel>Испорченная одежда</AlertDeadMansApparel>
-  <AlertDeadMansApparelDesc>Эти колонисты носят одежду с трупа, что их очень огорчает:\n\n{0}\nДайте им новую одежду.</AlertDeadMansApparelDesc>
+  <AlertDeadMansApparelDesc>Эти колонисты носят одежду с трупа, что их очень огорчает:\n{0}\n\nДайте им новую одежду.</AlertDeadMansApparelDesc>
 
   <AlertHumanLeatherApparelSad>Одежда из человеческой кожи</AlertHumanLeatherApparelSad>
   <AlertHumanLeatherApparelSadDesc>Эти колонисты одеты в одежду из человеческой кожи, что их беспокоит. Дайте им одежду, сделанную из другого материала.</AlertHumanLeatherApparelSadDesc>

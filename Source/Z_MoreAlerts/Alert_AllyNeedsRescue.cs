@@ -10,26 +10,24 @@ namespace Z_MoreAlerts
 {
     public class Alert_AllyNeedsRescue : Alert_SemiCritical
     {
-        private IEnumerable<Pawn> AlliesNeedingRescue
+        private readonly List<Pawn> alliesNeedingRescue = new List<Pawn>();
+
+        private List<Pawn> AlliesNeedingRescue
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.Humanlike && p.Faction != null && p.Faction != Faction.OfPlayer).ToList())
+                alliesNeedingRescue.Clear();
+
+                foreach (Pawn p in Utility.SpawnedAllies)
                 {
-                    if (!p.IsPrisoner && p.Faction.AllyOrNeutralTo(Faction.OfPlayer))
+                    if (p.RaceProps.Humanlike && !p.IsPrisoner && Utility.NeedsRescue(p))
                     {
-                        if (Alert_EnemiesOnMap.NeedsRescue(p))
-                        {
-                            yield return p;
-                        }
+                        alliesNeedingRescue.Add(p);
                     }
                 }
-            }
-        }
 
-        public static bool NeedsRescue(Pawn p)
-        {
-            return p.Downed && !p.InBed() && !(p.ParentHolder is Pawn_CarryTracker) && (p.jobs.jobQueue == null || p.jobs.jobQueue.Count <= 0 || !p.jobs.jobQueue.Peek().job.CanBeginNow(p, false));
+                return alliesNeedingRescue;
+            }
         }
 
         public override string GetLabel()
@@ -39,12 +37,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in this.AlliesNeedingRescue)
-            {
-                stringBuilder.AppendLine("    " + current.LabelShort);
-            }
-            return string.Format("AlertAllyNeedsRescueDesc".Translate(), stringBuilder.ToString());
+            return string.Format("AlertAllyNeedsRescueDesc".Translate(), Utility.BuildPawnListText(this.alliesNeedingRescue));
         }
 
         public override AlertReport GetReport()
@@ -53,7 +46,7 @@ namespace Z_MoreAlerts
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.AlliesNeedingRescue.ToList());
+            return AlertReport.CulpritsAre(this.AlliesNeedingRescue);
         }
     }
 }
