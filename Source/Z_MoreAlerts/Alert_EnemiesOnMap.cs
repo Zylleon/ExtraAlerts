@@ -14,23 +14,14 @@ namespace Z_MoreAlerts
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned)
+                foreach (Pawn p in Utility.SpawnedEnemies)
                 {
-                    if (p.HostileTo(Faction.OfPlayer) && !p.Downed)
+                    if (!p.Downed && !Alert_HiddenEnemiesOnMap.IsHidden(p))
                     {
-                        if (!Alert_HiddenEnemiesOnMap.IsHidden(p))
-                        {
-                            yield return p;
-
-                        }
+                        yield return p;
                     }
                 }
             }
-        }
-
-        public static bool NeedsRescue(Pawn p)
-        {
-            return p.Downed && !p.InBed() && !(p.ParentHolder is Pawn_CarryTracker) && (p.jobs.jobQueue == null || p.jobs.jobQueue.Count <= 0 || !p.jobs.jobQueue.Peek().job.CanBeginNow(p, false));
         }
 
         public override string GetLabel()

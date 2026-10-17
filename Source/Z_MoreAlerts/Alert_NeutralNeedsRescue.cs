@@ -15,9 +15,9 @@ namespace Z_MoreAlerts
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.Humanlike && p.Faction == null))
+                foreach (Pawn p in Utility.SpawnedNeutrals)
                 {
-                    if (Alert_EnemiesOnMap.NeedsRescue(p))
+                    if (p.RaceProps.Humanlike && Utility.NeedsRescue(p))
                     {
                         yield return p;
                     }

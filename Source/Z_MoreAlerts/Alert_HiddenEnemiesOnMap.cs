@@ -14,16 +14,11 @@ namespace Z_MoreAlerts
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned)
+                foreach (Pawn p in Utility.SpawnedEnemies)
                 {
-                    if (p.HostileTo(Faction.OfPlayer) && !p.Downed)
+                    if (!p.Downed && IsHidden(p))
                     {
-                        if (IsHidden(p))
-                        {
-                            yield return p;
-
-                        }
-
+                        yield return p;
                     }
                 }
             }

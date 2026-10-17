@@ -14,22 +14,14 @@ namespace Z_MoreAlerts
         {
             get
             {
-                foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.Humanlike && p.Faction != null && p.Faction != Faction.OfPlayer).ToList())
+                foreach (Pawn p in Utility.SpawnedAllies)
                 {
-                    if (!p.IsPrisoner && p.Faction.AllyOrNeutralTo(Faction.OfPlayer))
+                    if (p.RaceProps.Humanlike && !p.IsPrisoner && Utility.NeedsRescue(p))
                     {
-                        if (Alert_EnemiesOnMap.NeedsRescue(p))
-                        {
-                            yield return p;
-                        }
+                        yield return p;
                     }
                 }
             }
-        }
-
-        public static bool NeedsRescue(Pawn p)
-        {
-            return p.Downed && !p.InBed() && !(p.ParentHolder is Pawn_CarryTracker) && (p.jobs.jobQueue == null || p.jobs.jobQueue.Count <= 0 || !p.jobs.jobQueue.Peek().job.CanBeginNow(p, false));
         }
 
         public override string GetLabel()

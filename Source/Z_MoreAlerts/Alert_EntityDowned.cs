@@ -16,7 +16,7 @@ namespace Z_MoreAlerts
                 //foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.IsAnomalyEntity && p.HostileTo(Faction.OfPlayer)))
                 foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.IsAnomalyEntity))
                 {
-                    if (Alert_EnemiesOnMap.NeedsRescue(p))
+                    if (Utility.NeedsRescue(p))
                     {
                         yield return p;
                     }
