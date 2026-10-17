@@ -22,7 +22,7 @@ namespace Z_MoreAlerts
                     }
                 }
 
-                if(!ExtraAlertSettings.cb_childCombatant)
+                if (!ExtraAlertSettings.cb_childCombatant)
                 {
                     unarmedCombatants.RemoveAll(c => c.DevelopmentalStage.Juvenile());
                 }
@@ -39,12 +39,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in unarmedCombatants)
-            {
-                stringBuilder.AppendLine("    " + current.NameShortColored.Resolve());
-            }
-            return string.Format("AlertUnarmedCombatantDesc".Translate(), stringBuilder.ToString());
+            return string.Format("AlertUnarmedCombatantDesc".Translate(), Utility.BuildPawnListText(unarmedCombatants));
         }
 
         public override AlertReport GetReport()

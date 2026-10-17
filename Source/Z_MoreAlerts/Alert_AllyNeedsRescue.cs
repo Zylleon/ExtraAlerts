@@ -39,12 +39,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in this.AlliesNeedingRescue)
-            {
-                stringBuilder.AppendLine("    " + current.LabelShort);
-            }
-            return string.Format("AlertAllyNeedsRescueDesc".Translate(), stringBuilder.ToString());
+            return string.Format("AlertAllyNeedsRescueDesc".Translate(), Utility.BuildPawnListText(this.AlliesNeedingRescue));
         }
 
         public override AlertReport GetReport()

@@ -15,7 +15,7 @@ namespace Z_MoreAlerts
             {
                 //foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.IsAnomalyEntity && p.HostileTo(Faction.OfPlayer)))
                 foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.IsAnomalyEntity))
-                    {
+                {
                     if (Alert_EnemiesOnMap.NeedsRescue(p))
                     {
                         yield return p;
@@ -31,12 +31,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in this.EntitiesDowned)
-            {
-                stringBuilder.AppendLine("    " + current.LabelShort);
-            }
-            return string.Format("AlertEntityDownedDesc".Translate(), stringBuilder.ToString());
+            return string.Format("AlertEntityDownedDesc".Translate(), Utility.BuildPawnListText(this.EntitiesDowned));
         }
 
         public override AlertReport GetReport()

@@ -18,7 +18,7 @@ namespace Z_MoreAlerts
                 {
                     if (p.HostileTo(Faction.OfPlayer) && !p.Downed)
                     {
-                        if(!Alert_HiddenEnemiesOnMap.IsHidden(p))
+                        if (!Alert_HiddenEnemiesOnMap.IsHidden(p))
                         {
                             yield return p;
 
@@ -40,12 +40,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in this.Enemies)
-            {
-                stringBuilder.AppendLine("    " + current.LabelShort);
-            }
-            return string.Format("AlertEnemiesDesc".Translate(), this.Enemies.Count(), stringBuilder.ToString());
+            return string.Format("AlertEnemiesDesc".Translate(), this.Enemies.Count(), Utility.BuildPawnListText(this.Enemies));
         }
 
         public override AlertReport GetReport()

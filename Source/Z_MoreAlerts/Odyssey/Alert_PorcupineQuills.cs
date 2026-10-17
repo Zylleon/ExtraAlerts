@@ -38,12 +38,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            StringBuilder stringBuilder = new StringBuilder();
-            foreach (Pawn current in pawnsWithQuills)
-            {
-                stringBuilder.AppendLine("    " + current.NameShortColored.Resolve());
-            }
-            return string.Format("AlertPorcupineQuillsDesc".Translate(), stringBuilder.ToString());
+            return string.Format("AlertPorcupineQuillsDesc".Translate(), Utility.BuildPawnListText(pawnsWithQuills));
         }
 
         public override AlertReport GetReport()
