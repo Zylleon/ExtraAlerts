@@ -11,17 +11,23 @@ namespace Z_MoreAlerts
 {
     public class Alert_NeutralNeedsRescue : Alert_SemiCritical
     {
-        private IEnumerable<Pawn> AlliesNeedingRescue
+        private readonly List<Pawn> neutralsNeedingRescue = new List<Pawn>();
+
+        private List<Pawn> NeutralsNeedingRescue
         {
             get
             {
+                neutralsNeedingRescue.Clear();
+
                 foreach (Pawn p in Utility.SpawnedNeutrals)
                 {
                     if (p.RaceProps.Humanlike && Utility.NeedsRescue(p))
                     {
-                        yield return p;
+                        neutralsNeedingRescue.Add(p);
                     }
                 }
+
+                return neutralsNeedingRescue;
             }
         }
 
@@ -32,7 +38,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            return string.Format("AlertNeutralNeedsRescueDesc".Translate(), Utility.BuildPawnListText(this.AlliesNeedingRescue));
+            return string.Format("AlertNeutralNeedsRescueDesc".Translate(), Utility.BuildPawnListText(this.neutralsNeedingRescue));
         }
 
         public override AlertReport GetReport()
@@ -41,7 +47,7 @@ namespace Z_MoreAlerts
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.AlliesNeedingRescue.ToList());
+            return AlertReport.CulpritsAre(this.NeutralsNeedingRescue);
         }
 
     }

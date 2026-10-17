@@ -9,18 +9,24 @@ namespace Z_MoreAlerts
 {
     public class Alert_EntitiesDowned : Alert_SemiCritical
     {
-        private IEnumerable<Pawn> EntitiesDowned
+        private readonly List<Pawn> entitiesDowned = new List<Pawn>();
+
+        private List<Pawn> EntitiesDowned
         {
             get
             {
+                entitiesDowned.Clear();
+
                 //foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.IsAnomalyEntity && p.HostileTo(Faction.OfPlayer)))
                 foreach (Pawn p in PawnsFinder.AllMaps_Spawned.Where(p => p.RaceProps.IsAnomalyEntity))
                 {
                     if (Utility.NeedsRescue(p))
                     {
-                        yield return p;
+                        entitiesDowned.Add(p);
                     }
                 }
+
+                return entitiesDowned;
             }
         }
 
@@ -31,7 +37,7 @@ namespace Z_MoreAlerts
 
         public override TaggedString GetExplanation()
         {
-            return string.Format("AlertEntityDownedDesc".Translate(), Utility.BuildPawnListText(this.EntitiesDowned));
+            return string.Format("AlertEntityDownedDesc".Translate(), Utility.BuildPawnListText(this.entitiesDowned));
         }
 
         public override AlertReport GetReport()
@@ -40,7 +46,7 @@ namespace Z_MoreAlerts
             {
                 return AlertReport.Inactive;
             }
-            return AlertReport.CulpritsAre(this.EntitiesDowned.ToList());
+            return AlertReport.CulpritsAre(this.EntitiesDowned);
         }
     }
 }

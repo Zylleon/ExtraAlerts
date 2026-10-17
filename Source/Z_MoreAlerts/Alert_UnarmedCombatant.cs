@@ -16,17 +16,14 @@ namespace Z_MoreAlerts
                 unarmedCombatants.Clear();
                 foreach (Pawn p in PawnsFinder.AllMaps_FreeColonistsSpawned)
                 {
-                    if (p.equipment.Primary == null && !p.WorkTagIsDisabled(WorkTags.Violent) && !p.Downed && p.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))
+                    if (p.equipment.Primary == null &&
+                        !p.WorkTagIsDisabled(WorkTags.Violent) &&
+                        !p.Downed && p.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) &&
+                        (ExtraAlertSettings.cb_childCombatant || !p.DevelopmentalStage.Juvenile()))
                     {
                         unarmedCombatants.Add(p);
                     }
                 }
-
-                if (!ExtraAlertSettings.cb_childCombatant)
-                {
-                    unarmedCombatants.RemoveAll(c => c.DevelopmentalStage.Juvenile());
-                }
-
 
                 return unarmedCombatants;
             }
